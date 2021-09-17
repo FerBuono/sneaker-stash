@@ -7,4 +7,4 @@ Es un e-commerce que se dedica a la venta de calzado casual/deportivo de marcas 
 - Nike
 - Jordan
 
-🚗[Live Demo](https://ferbuono.github.io/proyecto-js/)
+👟[Live Demo](https://ferbuono.github.io/proyecto-js/)
