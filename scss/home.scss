@@ -10,12 +10,13 @@
 body {
     height: 100vh;
     overflow: hidden;
-    background-color: #131313;
-    background-image: url(../images/patterns/adidas-pattern.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: bisque;
+    background-image: url(../images/backgrounds/brands-black.png);
+    background-size: 20%;
+    background-repeat: repeat;
 }
+
+
 
 .header{
     position: relative;
@@ -23,49 +24,65 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5rem;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    overflow: hidden;
+    height: 3rem;
+    padding: 5px 0;
+    margin: 3.5rem 0 2rem 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
     z-index: 5;
+    transition: 0.5s;
+    background-color: #131313;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5),
+                0 0 30px black;
 
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 80%;
+        
+        &__logo{
+            position: relative;
+            display: inline-block;
+            height: 10rem;
+            border: 2px solid white;
+            transition: 0.5s;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5),
+            0 0 30px black;
     
-    &__logo{
-        margin: 0 auto;
-        height: 80%;
-
-        img {
-            height: 100%;
+            img {
+                height: 100%;
+            }
+        }
+        
+        &__title {
+            position: relative;
+            display: inline;
+            color: #FCFCFC;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.5),
+                        0 0 10px black;
+            font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
+            font-size: 120px;
+            transition: 0.5s;
         }
     }
 }
 
-.title-container {
-    position: relative;
-    height: 3rem;
-    padding: 5px 0;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
-    background-color: #131313;
-    box-shadow: 0 10px 20px black;
-    transition: 0.5s;
-    z-index: 5;
-
-    &__title {
-        content: 'Choose a brand!';
-        position: absolute;
-        top: -2.5rem;
-        width: 100%;
-        color: white;
-        text-shadow: 0 0 10px black;
-        font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
-        font-size: 110px;
-        text-align: center;
-        transition: 0.5s;
-    }
+.bg-image {
+    position:absolute;
+    top: 0;
+    width: 150%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: 1s;
 }
 
+.active {
+    opacity: 1;
+}
 
 .cards-container {
     position: relative;
@@ -73,8 +90,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    z-index: 10;
     transform-style: preserve-3d;
 }
 
@@ -83,9 +101,12 @@ body {
     width: 300px;
     height: 400px;
     margin: 40px;
+    border: 3px solid transparent;
     border-radius: 20px;
     transform-style: preserve-3d;
-    box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
+                4px 4px 4px 0 rgba(0, 0, 0, .15);
+    transition: border-color 0.5s, box-shadow 0.5s;
     
     &__pattern {
         position: absolute;
@@ -215,6 +236,13 @@ body {
                 width: 60%;
             }
         }
+
+        &:hover {
+            border-color: #9bdc28;
+            box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
+                        4px 4px 4px 0 rgba(0, 0, 0, .15),
+                        0 0 10px #9bdc28;
+        }
     }
 
     &--nike {
@@ -224,10 +252,24 @@ body {
             width: 80%; 
             margin-top: 30px;
         }
+
+        &:hover {
+            border-color: #FA1E1E;
+            box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
+                        4px 4px 4px 0 rgba(0, 0, 0, .15),
+                        0 0 10px #FA1E1E;
+        }
     }
 
     &--jordan {
         background-color: #000;
+
+        &:hover {
+            border-color: #36F5F5;
+            box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
+                        4px 4px 4px 0 rgba(0, 0, 0, .15),
+                        0 0 10px #36F5F5;
+        }
     }
 
     

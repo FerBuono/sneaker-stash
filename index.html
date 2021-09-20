@@ -9,15 +9,19 @@
     <title>Sneaker Stash - Choose a brand!</title>
 </head>
 <body>
-    <header class="header">
-        <a  href="/" class="header__logo">
-            <img src="images/logos/logo-simple.png" alt="">
-        </a>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a  href="/" class="header__container__logo" id="logo">
+                <img src="images/logos/logo.png" alt="">
+            </a>
+            <h2 class="header__container__title" id="title">Choose a brand!</h2>
+        </div>
     </header>
-    <div class="title-container">
-        <h2 class="title-container__title" id="title">Choose a brand!</h2>
-    </div>
-
+    
+    <img src="images/backgrounds/adidas.jpg" alt="" class="bg-image" id="bg-adidas">
+    <img src="images/backgrounds/nike.jpg" alt="" class="bg-image" id="bg-nike">
+    <img src="images/backgrounds/jordan.jpg" alt="" class="bg-image" id="bg-jordan">
+    
     <main class="cards-container"  id="cards-container">
         <a href="#" class="card card--adidas">
             <div class='card__pattern'>
