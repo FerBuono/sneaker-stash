@@ -52,8 +52,7 @@ body {
       font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
       font-size: 7em;
       letter-spacing: 5px;
-      text-shadow: 0 0 4px black;
-      animation: flicker-base 1.5s infinite alternate;
+      text-shadow: 0 0 4px black, 0 0 10px black;
       transition: 0.5s; }
   .header::before {
     content: '';
@@ -67,30 +66,6 @@ body {
     background-size: 20%;
     background-position: center;
     filter: blur(2px) invert(1); }
-
-@keyframes flicker-base {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #0fa, 0 0 73px #0fa; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 5px #fff, 0 0 9px #fff, 0 0 19px #0fa, 0 0 36px #0fa; } }
-
-@keyframes flicker-green {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #9bdc28, 0 0 73px #9bdc28; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 5px #fff, 0 0 9px #fff, 0 0 19px #9bdc28, 0 0 36px #9bdc28; } }
-
-@keyframes flicker-red {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #FA1E1E, 0 0 73px #FA1E1E; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 5px #fff, 0 0 9px #fff, 0 0 19px #FA1E1E, 0 0 36px #FA1E1E; } }
-
-@keyframes flicker-cyan {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #36F5F5, 0 0 73px #36F5F5; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 5px #fff, 0 0 9px #fff, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
 
 .bg-image {
   position: absolute;
@@ -213,10 +188,12 @@ body {
     transform: translate3d(0, 0, 75px);
     transition: 0.5s; }
     .card__text--adidas {
-      color: black;
-      text-shadow: 0 0 25px #FA1E1E; }
+      color: black000;
+      animation: flicker-red 1.5s infinite alternate; }
     .card__text--nike {
-      text-shadow: 0 0 15px #36F5F5; }
+      animation: flicker-cyan 1.5s infinite alternate; }
+    .card__text--jordan {
+      animation: flicker-green 1.5s infinite alternate; }
   .card--adidas {
     background-color: #fff; }
     .card--adidas .card__brand-logo {
@@ -252,3 +229,21 @@ body {
     box-shadow: 0px 0px 50px #36F5F5; }
   .card:hover .card__text {
     opacity: 0.95; }
+
+@keyframes flicker-green {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #9bdc28, 0 0 38px #9bdc28, 0 0 73px #9bdc28; }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #9bdc28, 0 0 19px #9bdc28, 0 0 36px #9bdc28; } }
+
+@keyframes flicker-red {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 18px #FA1E1E, 0 0 38px #FA1E1E, 0 0 73px #FA1E1E; }
+  20%, 24%, 55% {
+    text-shadow: 0 0 5px #000, 0 0 9px #FA1E1E, 0 0 19px #FA1E1E, 0 0 36px #FA1E1E; } }
+
+@keyframes flicker-cyan {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5; }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }

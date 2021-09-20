@@ -7,7 +7,6 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 const cardsContainer = document.querySelector('#cards-container');
 const header = document.querySelector('#header');
 const logo = document.querySelector('#logo');
-const title = document.querySelector('#title');
 
 // Backgrounds
 const bgAdidas = document.querySelector('#bg-adidas');
@@ -45,31 +44,23 @@ const changes = e => {
     // Cambiar el bg según cada marca
     if(firstParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
-        title.style.animation = 'flicker-red 1.5s infinite alternate';
     }
     else if(firstParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
-        title.style.animation = 'flicker-cyan 1.5s infinite alternate';
     }
     else if(firstParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
-        title.style.animation = 'flicker-green 1.5s infinite alternate';
     }
     
     if(secondParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
-        title.style.animation = 'flicker-red 1.5s infinite alternate';
     }
     else if(secondParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
-        title.style.animation = 'flicker-cyan 1.5s infinite alternate';
     }
     else if(secondParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
-        title.style.animation = 'flicker-green 1.5s infinite alternate';
     }
-
-
 };
 
 const removeChanges = e => {
@@ -84,8 +75,6 @@ const removeChanges = e => {
     bgAdidas.classList.remove('active');
     bgNike.classList.remove('active');
     bgJordan.classList.remove('active');
-
-    title.style.animation = 'flicker-base 1.5s infinite alternate';
 }
 
 const loadEventListeners = () => {
