@@ -14,8 +14,8 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #131313;
-    background-image: url(../images/backgrounds/brands-grey.png);
-    background-size: 20%;
+    background-image: url(../images/backgrounds/sneakers-bg2.jpg);
+    background-size: cover;
     background-position: center;
 }
 
@@ -66,10 +66,11 @@ body {
             position: relative;
             display: inline;
             color: #FCFCFC;
-            text-shadow: 0 0 20px rgba(0, 0, 0, 0.5),
-                        0 0 10px black;
-            font-family: 'Lobster', 'Poppins', sans-serif;
-            font-size: 6em;
+            font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
+            font-size: 7em;
+            letter-spacing: 5px;
+            text-shadow: 0 0 4px black;
+            animation: flicker-base 1.5s infinite alternate;
             transition: 0.5s;
         }
     }
@@ -87,6 +88,106 @@ body {
         background-position: center;
         filter: blur(2px) invert(1);
     }
+}
+
+@keyframes flicker-base {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px #0fa,
+        0 0 73px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 1px #000,
+        0 0 2px #000,
+        0 0 5px #fff,
+        0 0 9px #fff,
+        0 0 19px #0fa,
+        0 0 36px #0fa;
+    }    
+}
+@keyframes flicker-green {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px $green-color,
+        0 0 73px $green-color;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 1px #000,
+        0 0 2px #000,
+        0 0 5px #fff,
+        0 0 9px #fff,
+        0 0 19px $green-color,
+        0 0 36px $green-color;
+    }    
+}
+@keyframes flicker-red {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px $red-color,
+        0 0 73px $red-color;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 1px #000,
+        0 0 2px #000,
+        0 0 5px #fff,
+        0 0 9px #fff,
+        0 0 19px $red-color,
+        0 0 36px $red-color;
+    }    
+}
+@keyframes flicker-cyan {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 1px black,
+        0 0 2px black,
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px $cyan-color,
+        0 0 73px $cyan-color;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 1px #000,
+        0 0 2px #000,
+        0 0 5px #fff,
+        0 0 9px #fff,
+        0 0 19px $cyan-color,
+        0 0 36px $cyan-color;
+    }    
 }
 
 .bg-image {
@@ -120,7 +221,7 @@ body {
     width: 300px;
     height: 400px;
     margin: 40px;
-    border: 3px solid transparent;
+    border: 3px solid white;
     border-radius: 20px;
     transform-style: preserve-3d;
     box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
