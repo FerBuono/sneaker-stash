@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,8 +50,8 @@ body {
       display: inline;
       color: #FCFCFC;
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px black;
-      font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
-      font-size: 120px;
+      font-family: 'Lobster', 'Poppins', sans-serif;
+      font-size: 6em;
       transition: 0.5s; }
   .header::before {
     content: '';
@@ -61,7 +61,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: pink;
-    background-image: url(/images/backgrounds/brands-black.png);
+    background-image: url(../images/backgrounds/brands-black.png);
     background-size: 20%;
     background-position: center;
     filter: blur(2px) invert(1); }

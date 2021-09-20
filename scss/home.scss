@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap');
 
+$green-color: #9bdc28;
+$red-color: #FA1E1E;
+$cyan-color: #36F5F5;
 
 * {
     margin: 0;
@@ -65,8 +68,8 @@ body {
             color: #FCFCFC;
             text-shadow: 0 0 20px rgba(0, 0, 0, 0.5),
                         0 0 10px black;
-            font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
-            font-size: 120px;
+            font-family: 'Lobster', 'Poppins', sans-serif;
+            font-size: 6em;
             transition: 0.5s;
         }
     }
@@ -79,7 +82,7 @@ body {
         width: 100%;
         height: 100%;
         background-color: pink;
-        background-image: url(/images/backgrounds/brands-black.png);
+        background-image: url(../images/backgrounds/brands-black.png);
         background-size: 20%;
         background-position: center;
         filter: blur(2px) invert(1);
@@ -192,15 +195,15 @@ body {
         }
 
         &--adidas {
-            background: #9bdc28;
+            background: $green-color;
         }
 
         &--nike {
-            background: #FA1E1E;
+            background: $red-color;
         }
 
         &--jordan {
-            background: #36F5F5;
+            background: $cyan-color;
         }
     }
 
@@ -227,18 +230,18 @@ body {
         font-size: 5em;
         font-weight: 400;
         color: white;
-        text-shadow: 0 0 15px #9bdc28;
+        text-shadow: 0 0 15px $green-color;
         opacity: 0;
         transform: translate3d(0,0,75px);
         transition: 0.5s;
 
         &--adidas {
             color: black;
-            text-shadow: 0 0 25px #FA1E1E;
+            text-shadow: 0 0 25px $red-color;
         }
 
         &--nike {
-            text-shadow: 0 0 15px #36F5F5;
+            text-shadow: 0 0 15px $cyan-color;
         }
     }
 
@@ -254,10 +257,10 @@ body {
         }
 
         &:hover {
-            border-color: #9bdc28;
+            border-color: $green-color;
             box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
                         4px 4px 4px 0 rgba(0, 0, 0, .15),
-                        0 0 10px #9bdc28;
+                        0 0 10px $green-color;
         }
     }
 
@@ -270,10 +273,10 @@ body {
         }
 
         &:hover {
-            border-color: #FA1E1E;
+            border-color: $red-color;
             box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
                         4px 4px 4px 0 rgba(0, 0, 0, .15),
-                        0 0 10px #FA1E1E;
+                        0 0 10px $red-color;
         }
     }
 
@@ -281,10 +284,10 @@ body {
         background-color: #000;
 
         &:hover {
-            border-color: #36F5F5;
+            border-color: $cyan-color;
             box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, .5),
                         4px 4px 4px 0 rgba(0, 0, 0, .15),
-                        0 0 10px #36F5F5;
+                        0 0 10px $cyan-color;
         }
     }
 
@@ -302,15 +305,15 @@ body {
         }
 
         .card__circle--adidas {
-            box-shadow: 0px 0px 50px #9bdc28;
+            box-shadow: 0px 0px 50px $green-color;
         }
 
         .card__circle--nike {
-            box-shadow: 0px 0px 50px #FA1E1E;
+            box-shadow: 0px 0px 50px $red-color;
         }
 
         .card__circle--jordan {
-            box-shadow: 0px 0px 50px #36F5F5;
+            box-shadow: 0px 0px 50px $cyan-color;
         }
 
         .card__text { 
