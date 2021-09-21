@@ -7,6 +7,7 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 const cardsContainer = document.querySelector('#cards-container');
 const header = document.querySelector('#header');
 const logo = document.querySelector('#logo');
+const title = document.querySelector('#title');
 
 // Backgrounds
 const bgAdidas = document.querySelector('#bg-adidas');
@@ -44,22 +45,52 @@ const changes = e => {
     // Cambiar el bg según cada marca
     if(firstParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #FA1E1E,
+                        0 0 38px #FA1E1E,
+                        0 0 73px #FA1E1E`;
     }
     else if(firstParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #36F5F5,
+                        0 0 38px #36F5F5,
+                        0 0 73px #36F5F5`;
     }
     else if(firstParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #9bdc28,
+                        0 0 38px #9bdc28,
+                        0 0 73px #9bdc28`;
     }
     
     if(secondParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #FA1E1E,
+                        0 0 38px #FA1E1E,
+                        0 0 73px #FA1E1E`;
     }
     else if(secondParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #36F5F5,
+                        0 0 38px #36F5F5,
+                        0 0 73px #36F5F5`;
     }
     else if(secondParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
+        title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #9bdc28,
+                        0 0 38px #9bdc28,
+                        0 0 73px #9bdc28`;
     }
 };
 
@@ -75,6 +106,12 @@ const removeChanges = e => {
     bgAdidas.classList.remove('active');
     bgNike.classList.remove('active');
     bgJordan.classList.remove('active');
+
+    title.style.textShadow = 
+                        `0 0 4px #000,
+                        0 0 18px #0fa,
+                        0 0 38px #0fa,
+                        0 0 73px #0fa`;
 }
 
 const loadEventListeners = () => {
