@@ -183,7 +183,7 @@
   box-shadow: 0 0 20px black;
   padding: 20px;
   height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   min-width: 300px; }
   .carrito::-webkit-scrollbar {
     width: 10px; }
