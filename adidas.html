@@ -18,7 +18,7 @@
                 </a>
                 <span class="logos__divisor"></span>
                 <div class="brands">
-                    <img src="images/logos/adidas-logo.png" alt="" class="brands__adidas">
+                    <img src="images/logos/adidas-logo.png" alt="" class="brands__actual">
                     <ul class="brands__list" id="brands">
                         <li class="brands__list__logos">
                             <span class="brands-divisor"></span>
@@ -40,13 +40,14 @@
             </section>
             <ul class="compras">
                 <li class="compras__container" id="img-carrito">
-                    <img src="cart.png" alt="">
+                    <img src="images/icons/cart.png" alt="">
                     <section class="carrito" id="carrito">
                         <table class="lista-carrito" id="lista-carrito">
                             <thead>
                                 <tr>
                                     <th>Image</th>
                                     <th>Name</th>
+                                    <th>Size</th>
                                     <th>Price</th>
                                     <th>Amount</th>
                                     <th></th>
@@ -90,11 +91,15 @@
                     </div>
                     <div class="color" id="colors">
                         <h3>Color :</h3>
-                        <span class="black-shoe active" img-id="images/shoes/adidas/nmd_r1/nmd-r1-black.png"></span>
+                        <span class="black active" img-id="images/shoes/adidas/nmd_r1/nmd-r1-black.png"></span>
                         <span class="muted-lime"img-id="images/shoes/adidas/nmd_r1/nmd-r1-muted-lime.png"></span>
                         <span class="grey"img-id="images/shoes/adidas/nmd_r1/nmd-r1-grey.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$100</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
             <div class="card">
@@ -117,7 +122,11 @@
                         <span class="green-white"img-id="images/shoes/adidas/forum/forum-beige.png"></span>
                         <span class="red"img-id="images/shoes/adidas/forum/forum-red.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$90</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
             <div class="card">
@@ -137,10 +146,14 @@
                     <div class="color" id="colors">
                         <h3>Color :</h3>
                         <span class="toasted active"img-id="images/shoes/adidas/nmd_r1-v2/nmd-v2-beige.png"></span>
-                        <span class="black-shoe" img-id="images/shoes/adidas/nmd_r1-v2/nmd-v2-black.png"></span>
+                        <span class="black" img-id="images/shoes/adidas/nmd_r1-v2/nmd-v2-black.png"></span>
                         <span class="white"img-id="images/shoes/adidas/nmd_r1-v2/nmd-v2-white.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$140</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
             <div class="card">
@@ -160,9 +173,13 @@
                     <div class="color" id="colors">
                         <h3>Color :</h3>
                         <span class="blue active" img-id="images/shoes/adidas/retropy p9/retropy-blue.png"></span>
-                        <span class="black-shoe"img-id="images/shoes/adidas/retropy p9/retropy-black.png"></span>
+                        <span class="black"img-id="images/shoes/adidas/retropy p9/retropy-black.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$100</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
             <div class="card">
@@ -182,11 +199,14 @@
                     <div class="color" id="colors">
                         <h3>Color :</h3>
                         <span class="pink active" img-id="images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-pink.png"></span>
-                        <span class="white"img-id="images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-white.png"></span>
                         <span class="dark-purple"img-id="images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-purple.png"></span>
-                        <span class="black-shoe"img-id="images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-black.png"></span>
+                        <span class="black"img-id="images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-black.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$140</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
             <div class="card">
@@ -209,7 +229,11 @@
                         <span class="white"img-id="images/shoes/adidas/zx-2k-boost/zx-2k-boost-fluorgreen.png"></span>
                         <span class="orangered"img-id="images/shoes/adidas/zx-2k-boost/zx-2k-boost-orange.png"></span>
                     </div>
-                    <a href="#">Add to cart</a>
+                    <div class="price" id="price">
+                        <h3>Price :</h3>
+                        <p>$150</p>
+                    </div>
+                    <a href="#" class='agregar'>Add to cart</a>
                 </div>
             </div>
         </div>
@@ -218,4 +242,5 @@
 </body>
 <script src="js/products.js"></script>
 <script src="js/shoes.js"></script>
+<script src="js/cart.js"></script>
 </html>

@@ -1,5 +1,6 @@
 const shoesList = document.querySelector('#shoes-list')
 const circles = Array.from(document.querySelectorAll('.card__circle'));
+const cards = Array.from(document.querySelectorAll('.card'));
 
 
 // Funcion para asignar el color del circulo al cargar la página
@@ -63,10 +64,18 @@ const change = e => {
     };
 };
 
+console.log(cards)
 
 // Función que llama a todos los eventos
 const loadEventListeners = () => {
     shoesList.addEventListener('click', change);
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseleave', () => {
+            const size = card.querySelector('.size');
+            size.style.backgroundImage = '';
+        })
+    })
 }
 
 loadEventListeners()
