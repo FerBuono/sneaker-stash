@@ -1,8 +1,3 @@
-VanillaTilt.init(document.querySelectorAll(".card"), {
-    max: 15,
-    speed: 400
-});
-
 // Variables
 const cardsContainer = document.querySelector('#cards-container');
 const header = document.querySelector('#header');
@@ -45,52 +40,28 @@ const changes = e => {
     // Cambiar el bg según cada marca
     if(firstParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #FA1E1E,
-                        0 0 38px #FA1E1E,
-                        0 0 73px #FA1E1E`;
+        title.style.animation = 'flicker-red 1.5s infinite alternate';
     }
     else if(firstParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #36F5F5,
-                        0 0 38px #36F5F5,
-                        0 0 73px #36F5F5`;
+        title.style.animation = 'flicker-cyan 1.5s infinite alternate';
     }
     else if(firstParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #9bdc28,
-                        0 0 38px #9bdc28,
-                        0 0 73px #9bdc28`;
+        title.style.animation = 'flicker-green 1.5s infinite alternate';
     }
     
     if(secondParent.classList.contains('card--adidas')) {
         bgAdidas.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #FA1E1E,
-                        0 0 38px #FA1E1E,
-                        0 0 73px #FA1E1E`;
+        title.style.animation = 'flicker-red 1.5s infinite alternate';
     }
     else if(secondParent.classList.contains('card--nike')) {
         bgNike.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #36F5F5,
-                        0 0 38px #36F5F5,
-                        0 0 73px #36F5F5`;
+        title.style.animation = 'flicker-cyan 1.5s infinite alternate';
     }
     else if(secondParent.classList.contains('card--jordan')) {
         bgJordan.classList.add('active');
-        title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #9bdc28,
-                        0 0 38px #9bdc28,
-                        0 0 73px #9bdc28`;
+        title.style.animation = 'flicker-green 1.5s infinite alternate';
     }
 };
 
@@ -107,11 +78,7 @@ const removeChanges = e => {
     bgNike.classList.remove('active');
     bgJordan.classList.remove('active');
 
-    title.style.textShadow = 
-                        `0 0 4px #000,
-                        0 0 18px #0fa,
-                        0 0 38px #0fa,
-                        0 0 73px #0fa`;
+    title.style.animation = 'flicker-base 1.5s infinite alternate';
 }
 
 const loadEventListeners = () => {

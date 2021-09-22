@@ -1,0 +1,85 @@
+@keyframes flicker-base {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #000,
+        0 0 10px #fff,
+        0 0 18px #0fa,
+        0 0 38px #0fa,
+        0 0 73px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 4px #000,
+        0 0 5px #fff,
+        0 0 9px #0fa,
+        0 0 19px #0fa,
+        0 0 36px #0fa;
+    }    
+}
+@keyframes flicker-green {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #000,
+        0 0 10px #fff,
+        0 0 18px $green-color,
+        0 0 38px $green-color,
+        0 0 73px $green-color;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 4px #000,
+        0 0 5px #fff,
+        0 0 9px $green-color,
+        0 0 19px $green-color,
+        0 0 36px $green-color;
+    }    
+}
+@keyframes flicker-red {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #000,
+        0 0 18px $red-color,
+        0 0 38px $red-color,
+        0 0 73px $red-color;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 5px #000,
+        0 0 9px $red-color,
+        0 0 19px $red-color,
+        0 0 36px $red-color;
+    }    
+}
+@keyframes flicker-cyan {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #000,
+        0 0 10px #fff,
+        0 0 18px $cyan-color,
+        0 0 38px $cyan-color,
+        0 0 73px $cyan-color;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: 
+        0 0 4px #000,
+        0 0 5px #fff,
+        0 0 9px $cyan-color,
+        0 0 19px $cyan-color,
+        0 0 36px $cyan-color;
+    }    
+}

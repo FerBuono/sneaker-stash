@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
 body {
@@ -25,7 +26,7 @@ body {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
   z-index: 5;
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black; }
@@ -53,8 +54,7 @@ body {
       font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
       font-size: 7em;
       letter-spacing: 5px;
-      text-shadow: 0 0 4px #000, 0 0 18px #0fa, 0 0 38px #0fa, 0 0 73px #0fa;
-      transition: 0.5s; }
+      animation: flicker-base 1.5s infinite alternate; }
   .header::before {
     content: '';
     position: absolute;
@@ -75,7 +75,7 @@ body {
   object-fit: cover;
   object-position: center;
   opacity: 0;
-  transition: 0.5s; }
+  transition: .3s; }
 
 .active {
   opacity: 1; }
@@ -127,7 +127,7 @@ body {
     transform: translate3d(0, 0, 75px);
     transition: 0.5s;
     opacity: 0;
-    filter: invert(1);
+    filter: invert(1) drop-shadow(0 0 4px black);
     z-index: 10; }
     .card__brand-logo img {
       width: 70%; }
@@ -172,7 +172,8 @@ body {
     z-index: 11;
     transition: 0.5s;
     transform-style: preserve-3d;
-    transform: translate3d(-50%, -50%, 100px) rotate(-15deg); }
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+    filter: drop-shadow(0 0 4px black); }
   .card__text {
     position: absolute;
     display: block;
@@ -196,7 +197,8 @@ body {
     .card__text--jordan {
       animation: flicker-green 1.5s infinite alternate; }
   .card--adidas {
-    background-color: #fff; }
+    background-color: #fff;
+    border-color: black; }
     .card--adidas .card__brand-logo {
       filter: invert(0); }
       .card--adidas .card__brand-logo img {
@@ -205,7 +207,8 @@ body {
       border-color: #9bdc28;
       box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #9bdc28; }
   .card--nike {
-    background-color: #4A3638; }
+    background-color: #4A3638;
+    border-color: #B5C9C7; }
     .card--nike .card__brand-logo img {
       width: 80%;
       margin-top: 30px; }
@@ -230,6 +233,12 @@ body {
     box-shadow: 0px 0px 50px #36F5F5; }
   .card:hover .card__text {
     opacity: 0.95; }
+
+@keyframes flicker-base {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #0fa, 0 0 38px #0fa, 0 0 73px #0fa; }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #0fa, 0 0 19px #0fa, 0 0 36px #0fa; } }
 
 @keyframes flicker-green {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {

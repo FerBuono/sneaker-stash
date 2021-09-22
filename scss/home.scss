@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap');
-
-$green-color: #9bdc28;
-$red-color: #FA1E1E;
-$cyan-color: #36F5F5;
+@import 'globals/fonts', 'globals/variables', 'globals/keyframes';
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,7 +29,7 @@ body {
     border-top: 4px solid white;
     border-bottom: 4px solid white;
     z-index: 5;
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5),
@@ -53,8 +50,7 @@ body {
             transition: 0.5s;
             border-radius: 50%;
             backdrop-filter: blur(2px);
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5),
-            0 0 30px black, 0 0 4px black;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black, 0 0 4px black;
             
             img {
                 height: 100%;
@@ -68,12 +64,7 @@ body {
             font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
             font-size: 7em;
             letter-spacing: 5px;
-            text-shadow: 
-                    0 0 4px #000,
-                    0 0 18px #0fa,
-                    0 0 38px #0fa,
-                    0 0 73px #0fa;
-            transition: 0.5s;
+            animation: flicker-base 1.5s infinite alternate;
         }
     }
 
@@ -99,7 +90,7 @@ body {
     object-fit: cover;
     object-position: center;
     opacity: 0;
-    transition: 0.5s;
+    transition: .3s;
 }
 
 .active {
@@ -160,7 +151,7 @@ body {
         transform: translate3d(0,0,75px);
         transition: 0.5s;
         opacity: 0;
-        filter: invert(1);
+        filter: invert(1) drop-shadow(0 0 4px black);
         z-index: 10;
 
         img {
@@ -220,6 +211,7 @@ body {
         transition: 0.5s;
         transform-style: preserve-3d;
         transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+        filter: drop-shadow(0 0 4px black);
     }
 
     &__text {
@@ -254,6 +246,7 @@ body {
 
     &--adidas {
         background-color: #fff;
+        border-color: black;
 
         .card__brand-logo {
             filter: invert(0);
@@ -274,6 +267,7 @@ body {
 
     &--nike {
         background-color: #4A3638;
+        border-color: #B5C9C7;
 
         .card__brand-logo img{
             width: 80%; 
@@ -331,66 +325,3 @@ body {
 }
 
 
-@keyframes flicker-green {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #000,
-        0 0 10px #fff,
-        0 0 18px $green-color,
-        0 0 38px $green-color,
-        0 0 73px $green-color;
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: 
-        0 0 4px #000,
-        0 0 5px #fff,
-        0 0 9px $green-color,
-        0 0 19px $green-color,
-        0 0 36px $green-color;
-    }    
-}
-@keyframes flicker-red {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #000,
-        0 0 18px $red-color,
-        0 0 38px $red-color,
-        0 0 73px $red-color;
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: 
-        0 0 5px #000,
-        0 0 9px $red-color,
-        0 0 19px $red-color,
-        0 0 36px $red-color;
-    }    
-}
-@keyframes flicker-cyan {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px #000,
-        0 0 10px #fff,
-        0 0 18px $cyan-color,
-        0 0 38px $cyan-color,
-        0 0 73px $cyan-color;
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: 
-        0 0 4px #000,
-        0 0 5px #fff,
-        0 0 9px $cyan-color,
-        0 0 19px $cyan-color,
-        0 0 36px $cyan-color;
-    }    
-}
