@@ -72,6 +72,11 @@ const loadEventListeners = () => {
         card.addEventListener('mouseleave', () => {
             const size = card.querySelector('.size');
             size.style.backgroundImage = '';
+
+            if(size.querySelector('.active')) {
+                size.querySelector('.active').style.backgroundColor = '';
+                size.querySelector('.active').classList.remove('active');
+            }
         })
     })
 }

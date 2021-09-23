@@ -3,6 +3,8 @@
 const cartList = document.querySelector('#lista-carrito tbody');
 const clearCartBtn = document.querySelector('#vaciar-carrito');
 let cartProducts = [];
+const contador = document.querySelector('#contador');
+
 
 const amountInCart = (array) => {
     return array.reduce((sum, obj) => sum + obj.amount, 0);
@@ -45,9 +47,6 @@ const readCardData = card => {
         const items = cartProducts.map(element => {
             if(element.size === product.size && element.image === product.image) {
                 element.amount ++;
-
-                // outOfStock(card, element);
-
                 return element; // Retorna el objeto con la cantidad actualizada
             } else {
                 return element; // Retorna el objeto
@@ -91,42 +90,26 @@ const toHTML = () => {
         cartList.appendChild(row);
 
     });
-    document.querySelector('#contador').style.animation = 'jump 0.5s';
-    setTimeout(() => {
-        document.querySelector('#contador').style.animation = '';
-    }, 500);
-    document.querySelector('#contador span').textContent = amountInCart(cartProducts);
 
-    header.style.top = '0';
+    if(amountInCart(cartProducts) > 0) {
+        contador.style.display = 'flex';
+        contador.style.animation = 'jump 0.5s';
+        setTimeout(() => {
+            contador.style.animation = '';
+        }, 500);
+        contador.querySelector('span').textContent = amountInCart(cartProducts);
+        header.style.top = '0';
+    }
+
 
 };
-
-// const outOfStock = (card, element) => {
-//     if(element.amount >= 5) {
-//         const {name, image, size, dataId} = element;
-//         const cardName = card.querySelector('.card__contentBx h2').textContent;
-//         const cardImg = card.querySelector('.card__imgBx img').src;
-//         const cardSize = card.querySelector('.size .active').textContent;
-//         const cardColor = getComputedStyle(card.querySelector('.color .active')).backgroundColor;
-
-//         if(cardName === element.name || cardImg === element.image || cardSize === element.size || cardColor === element.color) {
-//             console.log('es el mismo!', card.querySelector('.agregar').disabled);
-//             card.querySelector('.agregar').textContent = 'Out of Stock !';
-//             card.querySelector('.agregar').style.backgroundColor = 'grey';
-//             card.querySelector('.agregar').disabled = true;
-//         } else {
-//             console.log('ya no es el mismo!');
-
-//         }
-
-//     }
-// };
-
 
 const cleanHTML = () => {
     while(cartList.firstChild) {
         cartList.removeChild(cartList.firstChild);
     };
+
+    contador.style.display = 'none';
 };
 
 const clearCart = e => {

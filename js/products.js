@@ -52,7 +52,7 @@ window.onscroll = () => {
     ubicacionPrincipal = desplazamientoActual;
     
     // Cambiar el bg del header y marcas al pasar un punto
-    if(ubicacionPrincipal > 150) {
+    if(ubicacionPrincipal > 100) {
         header.style.backgroundColor = 'black'
         brands.style.backgroundColor = 'black'
         
