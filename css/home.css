@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap");
-@keyframes flicker-base {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #0fa, 0 0 38px #0fa, 0 0 73px #0fa; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #0fa, 0 0 19px #0fa, 0 0 36px #0fa; } }
-
 @keyframes flicker-green {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #9bdc28, 0 0 38px #9bdc28, 0 0 73px #9bdc28; }
@@ -22,6 +16,14 @@
     text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5; }
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
+
+@keyframes jump {
+  0% {
+    zoom: 0; }
+  50% {
+    zoom: 120%; }
+  100% {
+    zoom: 0; } }
 
 * {
   margin: 0;
@@ -78,7 +80,7 @@ body {
       font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
       font-size: 7em;
       letter-spacing: 5px;
-      animation: flicker-base 1.5s infinite alternate; }
+      text-shadow: 0 0 10px black; }
   .header::before {
     content: '';
     position: absolute;

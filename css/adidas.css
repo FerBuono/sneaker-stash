@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap");
-@keyframes flicker-base {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #0fa, 0 0 38px #0fa, 0 0 73px #0fa; }
-  20%, 24%, 55% {
-    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #0fa, 0 0 19px #0fa, 0 0 36px #0fa; } }
-
 @keyframes flicker-green {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #9bdc28, 0 0 38px #9bdc28, 0 0 73px #9bdc28; }
@@ -22,6 +16,14 @@
     text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5; }
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
+
+@keyframes jump {
+  0% {
+    zoom: 0; }
+  50% {
+    zoom: 120%; }
+  100% {
+    zoom: 0; } }
 
 .black {
   background-color: #232325; }
@@ -45,7 +47,7 @@
   background-color: white; }
 
 .blue {
-  background-color: blue; }
+  background-color: #013789; }
 
 .pink {
   background-color: pink; }
@@ -56,8 +58,14 @@
 .yellowgreen {
   background-color: #D5E171; }
 
+.light-orange {
+  background-color: #FF925E; }
+
 .orangered {
   background-color: orangered; }
+
+.orange-pink {
+  background-color: #D8A98B; }
 
 .green {
   background: #9bdc28; }
@@ -67,6 +75,18 @@
 
 .cyan {
   background: #36F5F5; }
+
+.blue-green {
+  background-color: #1B474A; }
+
+.bordeaux {
+  background-color: #785954; }
+
+.yellow {
+  background-color: #FABB00; }
+
+.cream {
+  background-color: #E4D8C7; }
 
 * {
   margin: 0;
@@ -155,8 +175,7 @@
 
 .compras {
   list-style: none;
-  height: 100%;
-  border-radius: 20%; }
+  height: 100%; }
   .compras__container {
     position: relative;
     display: flex;
@@ -164,8 +183,19 @@
     align-items: center;
     width: 100%;
     height: 100%; }
-    .compras__container img {
-      cursor: pointer; }
+    .compras__container .contador {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      top: 20%;
+      right: -20%;
+      color: white;
+      background-color: red; }
 
 .carrito {
   position: absolute;
@@ -178,7 +208,7 @@
   backdrop-filter: blur(5px);
   color: white;
   border: 1px solid white;
-  border-radius: 20% 0 0 20%;
+  border-radius: 0 0 0 20%;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 20px black;
   padding: 20px;
@@ -394,7 +424,7 @@
     .card__contentBx a {
       display: inline-block;
       padding: 10px 20px;
-      background: #fff;
+      background-color: #9bdc28;
       border-radius: 5px;
       margin-top: 10px;
       text-decoration: none;
@@ -405,6 +435,8 @@
       opacity: 0;
       transform: translateY(50px);
       transition: transform 0.5s, opacity 0.5s; }
+      .card__contentBx a:hover {
+        color: white; }
   .card::after {
     content: '';
     position: absolute;

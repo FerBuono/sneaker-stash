@@ -64,8 +64,6 @@ const change = e => {
     };
 };
 
-console.log(cards)
-
 // Función que llama a todos los eventos
 const loadEventListeners = () => {
     shoesList.addEventListener('click', change);

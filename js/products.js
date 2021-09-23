@@ -2,10 +2,10 @@
 
 const header = document.querySelector('#header')
 const brands = document.querySelector('#brands')
-let ubicacionPrincipal = window.pageYOffset;
+let ubicacionPrincipal = window.scrollY;
 
 const carrito = document.querySelector('#carrito');
-const imgCarrito = document.querySelector('#img-carrito img');
+const imgCarrito = document.querySelector('.compras');
 
 
 // Funciones
@@ -13,7 +13,7 @@ const imgCarrito = document.querySelector('#img-carrito img');
 // Mostrar header al acercar el mouse a la parte de arriba de la página
 document.addEventListener('mousemove', e => {
     let vertical = e.pageY;
-    let offset = window.pageYOffset;
+    let offset = window.scrollY;
 
     if(offset > 0) {
         if(vertical-offset <= 80) {
@@ -23,16 +23,28 @@ document.addEventListener('mousemove', e => {
     }
 });
 
+header.addEventListener('mouseleave', () => {
+    if(window.scrollY > 0) {
+        if(!carrito.mouseIsOver) {
+            header.style.top = '-6rem';
+        };
+    };
+});
+
 // Funciones al hacer scroll
 window.onscroll = () => {
 
     // Esconder el header al scrollear hacia abajo
-    let desplazamientoActual = window.pageYOffset;
+    let desplazamientoActual = window.scrollY;
     if (ubicacionPrincipal >= desplazamientoActual){
-        header.style.top = '0';
+        setTimeout(() => {
+            header.style.top = '0';
+        }, 300);
     }
     else{
-        header.style.top = '-6rem';
+        setTimeout(() => {
+            header.style.top = '-6rem';
+        }, 300);
 
     };
     ubicacionPrincipal = desplazamientoActual;
@@ -50,10 +62,8 @@ window.onscroll = () => {
 
 
 // Mostrar y esconder el carrito
-imgCarrito.addEventListener('click', () => {
-    if(carrito.style.display !== 'flex') carrito.style.display = 'flex';
-    else carrito.style.display = 'none';
-});
+imgCarrito.addEventListener('mouseover', () => carrito.style.display = 'flex');
+imgCarrito.addEventListener('mouseleave', () => carrito.style.display = 'none');
 
 
 

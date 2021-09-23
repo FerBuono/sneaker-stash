@@ -2,16 +2,21 @@ const cartList = document.querySelector('#lista-carrito tbody');
 const clearCartBtn = document.querySelector('#vaciar-carrito');
 let cartProducts = [];
 
+const amountInCart = (array) => {
+    return array.reduce((sum, obj) => sum + obj.amount, 0);
+}
+
+
 
 const addProduct = e => {
     e.preventDefault();
-
+    
     if(e.target.classList.contains('agregar')) {
         const card = e.target.parentElement.parentElement;
         const size = card.querySelector('.size');
 
         if(size.querySelector('.active')) {
-            size.style.backgroundImage = ''
+            size.style.backgroundImage = '';
             readCardData(card);
         } else {
             size.style.backgroundImage = 'linear-gradient(#fd000042, #fd000042)';
@@ -46,6 +51,14 @@ const readCardData = card => {
         // Agregamos elementos al arreglo de carrito
         cartProducts = [...cartProducts, product];
     };
+    
+    document.querySelector('#contador').style.animation = 'jump 0.5s';
+    setTimeout(() => {
+        document.querySelector('#contador').style.animation = '';
+    }, 500);
+    document.querySelector('#contador span').textContent = amountInCart(cartProducts);
+
+    header.style.top = '0';
 
     toHTML();
 };
@@ -83,6 +96,8 @@ const cleanHTML = () => {
 
 const clearCart = e => {
     e.preventDefault();
+
+    document.querySelector('#contador span').textContent = 0; // Lleva a 0 el contador
 
     cartProducts = []; // Resetea el array cartProducts
 
