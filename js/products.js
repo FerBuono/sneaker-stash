@@ -25,9 +25,7 @@ document.addEventListener('mousemove', e => {
 
 header.addEventListener('mouseleave', () => {
     if(window.scrollY > 0) {
-        if(!carrito.mouseIsOver) {
-            header.style.top = '-6rem';
-        };
+        header.style.top = '-6rem';
     };
 });
 
@@ -42,9 +40,13 @@ window.onscroll = () => {
         }, 300);
     }
     else{
-        setTimeout(() => {
-            header.style.top = '-6rem';
-        }, 300);
+        if(carrito.style.display == '' || carrito.style.display == 'none'){
+            setTimeout(() => {
+                header.style.top = '-6rem';
+            }, 300);
+        } else {
+            header.style.top = '0';
+        }
 
     };
     ubicacionPrincipal = desplazamientoActual;
