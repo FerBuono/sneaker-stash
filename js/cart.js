@@ -35,7 +35,6 @@ const readCardData = card => {
         size: card.querySelector('.size .active').textContent,
         color: getComputedStyle(card.querySelector('.color .active')).backgroundColor,
         price: card.querySelector('.price p').textContent,
-        dataId: card.querySelector('.agregar').dataset.id,
         amount: 1
     };
     
@@ -69,7 +68,7 @@ const toHTML = () => {
 
     // Recorre el carrito y genera el HTML
     cartProducts.forEach(element => {
-        const {name, image, size, price, dataId, amount} = element;
+        const {name, image, size, price, amount} = element;
         const row = document.createElement('tr');
         row.innerHTML=`
             <tr>
@@ -78,13 +77,18 @@ const toHTML = () => {
                 </td>
                 <td width="200" class="name">${name}</td>
                 <td class="size">${size}</td>
-                <td>${price}</th>
-                <td>${amount}</th>
+                <td>${price}</td>
+                <td class="amount">${amount}</td>
                 <td>
-                    <a href="#" class="delete-btn">
-                        <img src="images/icons/delete-button.png" class="delete-btn__img" data-id="${dataId}">
-                    </a>
-                </th>
+                    <div class="buttons">
+                        <a href="#" class="up-btn">
+                            <img src="images/icons/up.png" class="up-btn__img">
+                        </a>
+                        <a href="#" class="down-btn">
+                            <img src="images/icons/down.png" class="down-btn__img">
+                        </a>
+                    </div>
+                </td>
             </tr>
         `;
         cartList.appendChild(row);
@@ -122,31 +126,47 @@ const clearCart = e => {
     cleanHTML(); // Elimina los rows creados en la tabla
 };
 
-const deleteProduct = e => {
+const changeAmount = e => {
     e.preventDefault();
 
-    if(e.target.classList.contains('delete-btn__img')){
-        const row = e.target.parentElement.parentElement.parentElement;
-        const prodData = {
-            image: row.querySelector('.image').src,
-            size: row.querySelector('.size').textContent,
-            id: e.target.dataset.id,
-        }
-
-        console.log(cartProducts)
-        cartProducts = cartProducts.filter(prod => prod.image !== prodData.image || prod.size !== prodData.size || prod.dataId !== prodData.id);
-        // cartProducts = cartProducts.filter(prod => prod.image !== prodData.image);
-        console.log(cartProducts)
-
-        toHTML();
+    // Selecciono la fila del producto al que le quiero cambiar la cantidad
+    const row = e.target.parentElement.parentElement.parentElement.parentElement;
+    const prodData = {
+        image: row.querySelector('.image').src,
+        size: row.querySelector('.size').textContent,
+        amount: row.querySelector('.amount').textContent
+    }
+    
+    if(e.target.classList.contains('down-btn__img')){
+        
+        // Busca al producto y le resta una unidad, luego si esa cantidad es 0, elimina al producto del array
+        cartProducts = cartProducts.map(prod => {
+            if(prod.image === prodData.image && prod.size === prodData.size) {
+                prod.amount--;
+            }
+            return prod;
+        }).filter(prod => prod.amount !== 0);
     };
+
+    if(e.target.classList.contains('up-btn__img')){
+
+        // Busca al producto y le agrega una unidad
+        cartProducts = cartProducts.map(prod => {
+            if(prod.image === prodData.image && prod.size === prodData.size) {
+                prod.amount++;
+            }
+            return prod;
+        });
+    };
+
+    toHTML();
 };
 
 
 const cargarEventListeners = () => {
     shoesList.addEventListener('click', addProduct);
     clearCartBtn.addEventListener('click', clearCart);
-    cartList.addEventListener('click', deleteProduct);
+    cartList.addEventListener('click', changeAmount);
 }
 
 cargarEventListeners()

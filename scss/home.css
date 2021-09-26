@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Covered+By+Your+Grace&family=Lobster&display=swap");
+@-webkit-keyframes flicker-green {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #9bdc28, 0 0 38px #9bdc28, 0 0 73px #9bdc28;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #9bdc28, 0 0 19px #9bdc28, 0 0 36px #9bdc28;
+  }
+}
+@keyframes flicker-green {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #9bdc28, 0 0 38px #9bdc28, 0 0 73px #9bdc28;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #9bdc28, 0 0 19px #9bdc28, 0 0 36px #9bdc28;
+  }
+}
+
+@-webkit-keyframes flicker-red {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 18px #FA1E1E, 0 0 38px #FA1E1E, 0 0 73px #FA1E1E;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 5px #000, 0 0 9px #FA1E1E, 0 0 19px #FA1E1E, 0 0 36px #FA1E1E;
+  }
+}
+
+@keyframes flicker-red {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 18px #FA1E1E, 0 0 38px #FA1E1E, 0 0 73px #FA1E1E;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 5px #000, 0 0 9px #FA1E1E, 0 0 19px #FA1E1E, 0 0 36px #FA1E1E;
+  }
+}
+
+@-webkit-keyframes flicker-cyan {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5;
+  }
+}
+
+@keyframes flicker-cyan {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5;
+  }
+  20%, 24%, 55% {
+    text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    zoom: 0;
+  }
+  50% {
+    zoom: 120%;
+  }
+  100% {
+    zoom: 0;
+  }
+}
+
+@keyframes jump {
+  0% {
+    zoom: 0;
+  }
+  50% {
+    zoom: 120%;
+  }
+  100% {
+    zoom: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #131313;
+  background-image: url(../images/backgrounds/sneakers-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3rem;
+  padding: 5px 0;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  z-index: 5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  width: 80%;
+}
+
+.header__container__logo {
+  position: relative;
+  display: inline-block;
+  height: 10rem;
+  border: 2px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black, 0 0 4px black;
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 30px black, 0 0 4px black;
+}
+
+.header__container__logo img {
+  height: 100%;
+}
+
+.header__container__title {
+  position: relative;
+  display: inline;
+  color: #FCFCFC;
+  font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
+  font-size: 7em;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px black;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  background-image: url(../images/backgrounds/brands-black.png);
+  background-size: 20%;
+  background-position: center;
+  -webkit-filter: blur(2px) invert(1);
+          filter: blur(2px) invert(1);
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  width: 150%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.cards-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  border: 3px solid white;
+  border-radius: 20px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: border-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: border-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: border-color 0.5s, box-shadow 0.5s;
+  transition: border-color 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.card__pattern img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__brand-logo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 75px);
+          transform: translate3d(0, 0, 75px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  -webkit-filter: invert(1) drop-shadow(0 0 4px black);
+          filter: invert(1) drop-shadow(0 0 4px black);
+  z-index: 10;
+}
+
+.card__brand-logo img {
+  width: 70%;
+}
+
+.card__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #fff;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, -50%, 50px);
+          transform: translate3d(-50%, -50%, 50px);
+}
+
+.card__circle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  opacity: .5;
+  z-index: 10;
+  -webkit-transform: translate3d(0, 0, -50px);
+          transform: translate3d(0, 0, -50px);
+}
+
+.card__circle--adidas {
+  background: #9bdc28;
+}
+
+.card__circle--nike {
+  background: #FA1E1E;
+}
+
+.card__circle--jordan {
+  background: #36F5F5;
+}
+
+.card__shoe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 11;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+          transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+  -webkit-filter: drop-shadow(0 0 4px black);
+          filter: drop-shadow(0 0 4px black);
+}
+
+.card__text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+  left: 10px;
+  font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: white;
+  text-shadow: 0 0 15px #9bdc28;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 75px);
+          transform: translate3d(0, 0, 75px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card__text--adidas {
+  color: black000;
+  -webkit-animation: flicker-red 1.5s infinite alternate;
+          animation: flicker-red 1.5s infinite alternate;
+}
+
+.card__text--nike {
+  -webkit-animation: flicker-cyan 1.5s infinite alternate;
+          animation: flicker-cyan 1.5s infinite alternate;
+}
+
+.card__text--jordan {
+  -webkit-animation: flicker-green 1.5s infinite alternate;
+          animation: flicker-green 1.5s infinite alternate;
+}
+
+.card--adidas {
+  background-color: #fff;
+  border-color: black;
+}
+
+.card--adidas .card__brand-logo {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+.card--adidas .card__brand-logo img {
+  width: 60%;
+}
+
+.card--adidas:hover {
+  border-color: #9bdc28;
+  -webkit-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #9bdc28;
+          box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #9bdc28;
+}
+
+.card--nike {
+  background-color: #4A3638;
+  border-color: #B5C9C7;
+}
+
+.card--nike .card__brand-logo img {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.card--nike:hover {
+  border-color: #FA1E1E;
+  -webkit-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #FA1E1E;
+          box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #FA1E1E;
+}
+
+.card--jordan {
+  background-color: #000;
+}
+
+.card--jordan:hover {
+  border-color: #36F5F5;
+  -webkit-box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #36F5F5;
+          box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 0.5), 4px 4px 4px 0 rgba(0, 0, 0, 0.15), 0 0 10px #36F5F5;
+}
+
+.card:hover .card__pattern {
+  opacity: 1;
+}
+
+.card:hover .card__brand-logo {
+  top: 0;
+  opacity: 1;
+}
+
+.card:hover .card__circle--adidas {
+  -webkit-box-shadow: 0px 0px 50px #9bdc28;
+          box-shadow: 0px 0px 50px #9bdc28;
+}
+
+.card:hover .card__circle--nike {
+  -webkit-box-shadow: 0px 0px 50px #FA1E1E;
+          box-shadow: 0px 0px 50px #FA1E1E;
+}
+
+.card:hover .card__circle--jordan {
+  -webkit-box-shadow: 0px 0px 50px #36F5F5;
+          box-shadow: 0px 0px 50px #36F5F5;
+}
+
+.card:hover .card__text {
+  opacity: 0.95;
+}
+/*# sourceMappingURL=home.css.map */

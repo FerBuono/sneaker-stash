@@ -293,20 +293,23 @@
   .lista-carrito td {
     padding: 8px 16px;
     text-align: center; }
-  .lista-carrito .delete-btn {
+  .lista-carrito .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid white;
-    overflow: hidden;
-    background-color: white; }
-    .lista-carrito .delete-btn__img {
-      width: 100%; }
-    .lista-carrito .delete-btn:hover {
-      background-color: grey; }
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; }
+    .lista-carrito .buttons .up-btn, .lista-carrito .buttons .down-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 10px;
+      margin: 5px 0;
+      overflow: hidden; }
+      .lista-carrito .buttons .up-btn__img, .lista-carrito .buttons .down-btn__img {
+        width: 100%; }
+      .lista-carrito .buttons .up-btn:hover, .lista-carrito .buttons .down-btn:hover {
+        filter: invert(0.5); }
   .lista-carrito::-webkit-scrollbar {
     width: 10px; }
   .lista-carrito::-webkit-scrollbar-track {
