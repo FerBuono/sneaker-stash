@@ -17,14 +17,6 @@
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
 
-@keyframes jump {
-  0% {
-    zoom: 0; }
-  50% {
-    zoom: 120%; }
-  100% {
-    zoom: 0; } }
-
 .black {
   background-color: #232325; }
 

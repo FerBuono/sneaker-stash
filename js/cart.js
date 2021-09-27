@@ -1,33 +1,35 @@
 'use strict';
 
+
+/////////////////// Variables ///////////////////
+
 const cartList = document.querySelector('#lista-carrito tbody');
 const clearCartBtn = document.querySelector('#vaciar-carrito');
 let cartProducts = [];
 const contador = document.querySelector('#contador');
 
 
-const amountInCart = (array) => {
-    return array.reduce((sum, obj) => sum + obj.amount, 0);
-}
+/////////////////// Funciones ///////////////////
 
-
-
+// Función para agregar productos al carrito
 const addProduct = e => {
     e.preventDefault();
     
     if(e.target.classList.contains('agregar')) {
         const card = e.target.parentElement.parentElement;
         const size = card.querySelector('.size');
-
+        
+        // Validar si el size fue seleccionado
         if(size.querySelector('.active')) {
             size.style.backgroundImage = '';
-            readCardData(card);
+            readCardData(card); // Leer los datos de la card
         } else {
             size.style.backgroundImage = 'linear-gradient(#fd000042, #fd000042)';
         };
     };
 };
 
+// Función para leer los datos de la card y mostrarlos en un objeto. Luego este se agrega al array cartProducts
 const readCardData = card => {
     const product = {
         image: card.querySelector('.card__imgBx img').src,
@@ -38,10 +40,12 @@ const readCardData = card => {
         amount: 1
     };
     
+    // Chequear si el producto ya existe en el array
     const exist = cartProducts.some(card =>  {
         return card.name === product.name && card.size === product.size && card.image === product.image;
     });
     if(exist) {
+
         // Actualizamos la cantidad
         const items = cartProducts.map(element => {
             if(element.size === product.size && element.image === product.image) {
@@ -53,6 +57,7 @@ const readCardData = card => {
         });
         cartProducts = [...items];
     } else {
+
         // Agregamos elementos al arreglo de carrito
         cartProducts = [...cartProducts, product];
     };
@@ -61,9 +66,10 @@ const readCardData = card => {
 
 };
 
+
+// Función que toma los objetos de cartProducts y crea un HTML en el carrito
 const toHTML = () => {
 
-    // Limpiar el HTML para que no se dupliquen los items
     cleanHTML();
 
     // Recorre el carrito y genera el HTML
@@ -97,25 +103,17 @@ const toHTML = () => {
 
     if(amountInCart(cartProducts) > 0) {
         contador.style.display = 'flex';
-        contador.style.animation = 'jump 0.5s';
-        setTimeout(() => {
-            contador.style.animation = '';
-        }, 500);
         contador.querySelector('span').textContent = amountInCart(cartProducts);
         header.style.top = '0';
-    }
-
-
-};
-
-const cleanHTML = () => {
-    while(cartList.firstChild) {
-        cartList.removeChild(cartList.firstChild);
     };
-
-    contador.style.display = 'none';
 };
 
+// Función que devuelve la cantidad de productos en el array, teniendo en cuenta los amounts
+const amountInCart = (array) => {
+    return array.reduce((sum, obj) => sum + obj.amount, 0);
+}
+
+// Función que limpia el array cartProducts y lleva a 0 el contador
 const clearCart = e => {
     e.preventDefault();
 
@@ -126,6 +124,16 @@ const clearCart = e => {
     cleanHTML(); // Elimina los rows creados en la tabla
 };
 
+// Función que limpia el HTML del carrito para que no se dupliquen los items cada vez que agrego el array de objetos al HTML
+const cleanHTML = () => {
+    while(cartList.firstChild) {
+        cartList.removeChild(cartList.firstChild);
+    };
+
+    contador.style.display = 'none';
+};
+
+// Función que cambia el amount de un producto dependiendo de que botón se clickee
 const changeAmount = e => {
     e.preventDefault();
 
@@ -163,10 +171,11 @@ const changeAmount = e => {
 };
 
 
-const cargarEventListeners = () => {
-    shoesList.addEventListener('click', addProduct);
-    clearCartBtn.addEventListener('click', clearCart);
-    cartList.addEventListener('click', changeAmount);
-}
+/////////////////// Eventos ///////////////////
 
-cargarEventListeners()
+shoesList.addEventListener('click', addProduct);
+
+clearCartBtn.addEventListener('click', clearCart);
+
+cartList.addEventListener('click', changeAmount);
+

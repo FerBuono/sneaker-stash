@@ -1,4 +1,7 @@
-// Variables
+'use strict';
+
+
+/////////////////// Variables ///////////////////
 
 const header = document.querySelector('#header')
 const brands = document.querySelector('#brands')
@@ -8,28 +11,31 @@ const carrito = document.querySelector('#carrito');
 const imgCarrito = document.querySelector('.compras');
 
 
-// Funciones
-  
-// Mostrar header al acercar el mouse a la parte de arriba de la página
-document.addEventListener('mousemove', e => {
+/////////////////// Funciones ///////////////////
+
+// Función para mostrar el header al acercar el mouse a la parte superior de la página
+const showHeader = e => {
+
+    // Tomo la posición del mouse y la posición en Y de la página
     let vertical = e.pageY;
     let offset = window.scrollY;
 
     if(offset > 0) {
-        if(vertical-offset <= 80) {
+        if(vertical - offset <= 80) {
             header.style.top = '0';
-            header.style.backgroundColor = 'black'
-        }
-    }
-});
+            header.style.backgroundColor = 'black';
+        };
+    };
+};
 
-header.addEventListener('mouseleave', () => {
+// Función para esconder el header cuando sacas el mouse de encima
+const hideHeader = () => {
     if(window.scrollY > 0) {
         header.style.top = '-6rem';
     };
-});
+};
 
-// Funciones al hacer scroll
+// Función para mostrar/esconder el header al scrollear
 window.onscroll = () => {
 
     // Esconder el header al scrollear hacia abajo
@@ -51,7 +57,7 @@ window.onscroll = () => {
     };
     ubicacionPrincipal = desplazamientoActual;
     
-    // Cambiar el bg del header y marcas al pasar un punto
+    // Cambiar el background-color del header y marcas cuando scrollY > 100
     if(ubicacionPrincipal > 100) {
         header.style.backgroundColor = 'black'
         brands.style.backgroundColor = 'black'
@@ -63,8 +69,14 @@ window.onscroll = () => {
 };
 
 
-// Mostrar y esconder el carrito
+/////////////////// Eventos ///////////////////
+
+document.addEventListener('mousemove', showHeader);
+
+header.addEventListener('mouseleave', hideHeader);
+
 imgCarrito.addEventListener('mouseover', () => carrito.style.display = 'flex');
+
 imgCarrito.addEventListener('mouseleave', () => carrito.style.display = 'none');
 
 

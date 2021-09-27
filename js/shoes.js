@@ -1,22 +1,29 @@
-const shoesList = document.querySelector('#shoes-list')
+'use strict';
+
+
+/////////////////// Variables ///////////////////
+
+const shoesList = document.querySelector('#shoes-list');
 const circles = Array.from(document.querySelectorAll('.card__circle'));
 const cards = Array.from(document.querySelectorAll('.card'));
 
+
+/////////////////// Funciones ///////////////////
 
 // Funcion para asignar el color del circulo al cargar la página
 window.onload = () => {
     circles.forEach(circle => {
         const colorElement = circle.parentElement.querySelector('.active');
         circle.style.backgroundColor = getComputedStyle(colorElement).backgroundColor;
-    })
-}
+    });
+};
 
 // Función para obtener todos los elementos hermanos del elemento accionado
 const getSiblings = (element) => {
     const parent = element.parentElement;
     let children = Array.from(parent.querySelectorAll('span'));
     return children.filter(sibling => sibling !== element);
-}
+};
 
 
 // Función que realiza todos los cambios en la tarjeta (size, color)
@@ -37,8 +44,8 @@ const change = e => {
         e.target.classList.add('active');
         if(e.target.classList.contains('active')) {
             siblings.forEach(sibling => sibling.classList.remove('active'));
-        }
-    }
+        };
+    };
 
     // Cambios relacionados a la selección de color
     if(e.target.parentElement.classList.contains('color')) {
@@ -64,21 +71,23 @@ const change = e => {
     };
 };
 
-// Función que llama a todos los eventos
-const loadEventListeners = () => {
-    shoesList.addEventListener('click', change);
+// Función que borra la selección del size al salir de una card
+const removeSize = (card) => {
+    const size = card.querySelector('.size');
+    size.style.backgroundImage = '';
+
+    if(size.querySelector('.active')) {
+        size.querySelector('.active').style.backgroundColor = '';
+        size.querySelector('.active').classList.remove('active');
+    };
+};
+
+
+/////////////////// Eventos ///////////////////
+
+shoesList.addEventListener('click', change);
     
-    cards.forEach(card => {
-        card.addEventListener('mouseleave', () => {
-            const size = card.querySelector('.size');
-            size.style.backgroundImage = '';
+cards.forEach(card => {
+    card.addEventListener('mouseleave', removeSize);
+});
 
-            if(size.querySelector('.active')) {
-                size.querySelector('.active').style.backgroundColor = '';
-                size.querySelector('.active').classList.remove('active');
-            }
-        })
-    })
-}
-
-loadEventListeners()
