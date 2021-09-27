@@ -72,15 +72,7 @@ const change = e => {
 };
 
 // Función que borra la selección del size al salir de una card
-const removeSize = (card) => {
-    const size = card.querySelector('.size');
-    size.style.backgroundImage = '';
-
-    if(size.querySelector('.active')) {
-        size.querySelector('.active').style.backgroundColor = '';
-        size.querySelector('.active').classList.remove('active');
-    };
-};
+const removeSize = 
 
 
 /////////////////// Eventos ///////////////////
@@ -88,6 +80,14 @@ const removeSize = (card) => {
 shoesList.addEventListener('click', change);
     
 cards.forEach(card => {
-    card.addEventListener('mouseleave', removeSize);
+    card.addEventListener('mouseleave', () => {
+        const size = card.querySelector('.size');
+        size.style.backgroundImage = '';
+    
+        if(size.querySelector('.active')) {
+            size.querySelector('.active').style.backgroundColor = '';
+            size.querySelector('.active').classList.remove('active');
+        };
+    });
 });
 

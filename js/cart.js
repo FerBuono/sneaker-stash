@@ -63,14 +63,16 @@ const readCardData = card => {
     };
     
     toHTML();
-
+    
 };
 
 
 // Función que toma los objetos de cartProducts y crea un HTML en el carrito
 const toHTML = () => {
-
+    
     cleanHTML();
+    
+    toLocalStorage(cartProducts);
 
     // Recorre el carrito y genera el HTML
     cartProducts.forEach(element => {
@@ -108,21 +110,27 @@ const toHTML = () => {
     };
 };
 
+// Función que limpia el array cartProducts y lleva a 0 el contador
+const clearCart = e => {
+    e.preventDefault();
+    
+    document.querySelector('#contador span').textContent = 0; // Lleva a 0 el contador
+    
+    cartProducts = []; // Resetea el array cartProducts
+    
+    localStorage.clear(); // Limpia el localStorage
+
+    cleanHTML(); // Elimina los rows creados en la tabla
+};
+
+const toLocalStorage = array => {
+    localStorage.setItem('cartProducts', JSON.stringify(array));
+}
+
 // Función que devuelve la cantidad de productos en el array, teniendo en cuenta los amounts
 const amountInCart = (array) => {
     return array.reduce((sum, obj) => sum + obj.amount, 0);
 }
-
-// Función que limpia el array cartProducts y lleva a 0 el contador
-const clearCart = e => {
-    e.preventDefault();
-
-    document.querySelector('#contador span').textContent = 0; // Lleva a 0 el contador
-
-    cartProducts = []; // Resetea el array cartProducts
-
-    cleanHTML(); // Elimina los rows creados en la tabla
-};
 
 // Función que limpia el HTML del carrito para que no se dupliquen los items cada vez que agrego el array de objetos al HTML
 const cleanHTML = () => {
@@ -170,6 +178,12 @@ const changeAmount = e => {
     toHTML();
 };
 
+const loadCart = () => {
+    cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
+
+    toHTML();
+}
+
 
 /////////////////// Eventos ///////////////////
 
@@ -179,3 +193,4 @@ clearCartBtn.addEventListener('click', clearCart);
 
 cartList.addEventListener('click', changeAmount);
 
+document.addEventListener('DOMContentLoaded', loadCart);
