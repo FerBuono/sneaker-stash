@@ -22,7 +22,7 @@ const addProduct = e => {
         // Validar si el size fue seleccionado
         if(size.querySelector('.active')) {
             size.style.backgroundImage = '';
-            readCardData(card); // Leer los datos de la card
+            readCardData(card);
         } else {
             size.style.backgroundImage = 'linear-gradient(#fd000042, #fd000042)';
         };
@@ -50,9 +50,9 @@ const readCardData = card => {
         const items = cartProducts.map(element => {
             if(element.size === product.size && element.image === product.image) {
                 element.amount ++;
-                return element; // Retorna el objeto con la cantidad actualizada
+                return element;
             } else {
-                return element; // Retorna el objeto
+                return element;
             }
         });
         cartProducts = [...items];
@@ -63,9 +63,7 @@ const readCardData = card => {
     };
     
     toHTML();
-    
 };
-
 
 // Función que toma los objetos de cartProducts y crea un HTML en el carrito
 const toHTML = () => {
@@ -114,23 +112,14 @@ const toHTML = () => {
 const clearCart = e => {
     e.preventDefault();
     
-    document.querySelector('#contador span').textContent = 0; // Lleva a 0 el contador
+    document.querySelector('#contador span').textContent = 0;
     
-    cartProducts = []; // Resetea el array cartProducts
+    cartProducts = [];
     
-    localStorage.clear(); // Limpia el localStorage
+    localStorage.clear();
 
-    cleanHTML(); // Elimina los rows creados en la tabla
+    cleanHTML();
 };
-
-const toLocalStorage = array => {
-    localStorage.setItem('cartProducts', JSON.stringify(array));
-}
-
-// Función que devuelve la cantidad de productos en el array, teniendo en cuenta los amounts
-const amountInCart = (array) => {
-    return array.reduce((sum, obj) => sum + obj.amount, 0);
-}
 
 // Función que limpia el HTML del carrito para que no se dupliquen los items cada vez que agrego el array de objetos al HTML
 const cleanHTML = () => {
@@ -139,6 +128,16 @@ const cleanHTML = () => {
     };
 
     contador.style.display = 'none';
+};
+
+// Función que me pasa cartProducts al localStorage a medida que vamos agregando productos
+const toLocalStorage = array => {
+    localStorage.setItem('cartProducts', JSON.stringify(array));
+};
+
+// Función que devuelve la cantidad de productos en el array, teniendo en cuenta los amounts
+const amountInCart = (array) => {
+    return array.reduce((sum, obj) => sum + obj.amount, 0);
 };
 
 // Función que cambia el amount de un producto dependiendo de que botón se clickee
@@ -151,7 +150,7 @@ const changeAmount = e => {
         image: row.querySelector('.image').src,
         size: row.querySelector('.size').textContent,
         amount: row.querySelector('.amount').textContent
-    }
+    };
     
     if(e.target.classList.contains('down-btn__img')){
         
@@ -178,11 +177,12 @@ const changeAmount = e => {
     toHTML();
 };
 
+// Función que me pasa el array del localStorage al carrito con toHTML()
 const loadCart = () => {
     cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
 
     toHTML();
-}
+};
 
 
 /////////////////// Eventos ///////////////////
