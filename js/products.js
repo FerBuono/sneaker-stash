@@ -19,11 +19,32 @@ const showHeader = e => {
     // Tomo la posición del mouse y la posición en Y de la página
     let vertical = e.pageY;
     let offset = window.scrollY;
+    let difference = vertical - offset;
 
     if(offset > 0) {
-        if(vertical - offset <= 80) {
+        if(difference <= 100) {
             header.style.top = '0';
             header.style.backgroundColor = 'black';
+            brands.style.backgroundColor = 'black';
+        } else {
+            if(getComputedStyle(brands).display === 'flex' || carrito.style.display === 'flex') {
+                header.style.top = '0';
+                header.style.backgroundColor = 'black';
+                brands.style.backgroundColor = 'black';
+            }; 
+        };
+
+    } else {
+        header.style.top = '0';
+        if(difference <= 100) {
+            header.style.backgroundColor = 'black';
+            brands.style.backgroundColor = 'black';
+        } else if(getComputedStyle(brands).display === 'flex' || carrito.style.display === 'flex') {
+                header.style.backgroundColor = 'black';
+                brands.style.backgroundColor = 'black';
+        } else {
+            header.style.backgroundColor = 'transparent';
+            brands.style.backgroundColor = 'transparent';
         };
     };
 };
@@ -31,12 +52,13 @@ const showHeader = e => {
 // Función para esconder el header cuando sacas el mouse de encima
 const hideHeader = () => {
     if(window.scrollY > 0) {
-        header.style.top = '-6rem';
+        header.onmouseleave = () => header.style.top = '-6rem';  
     };
 };
 
 // Función para mostrar/esconder el header al scrollear
 window.onscroll = () => {
+    console.log(carrito.style.display)
 
     // Esconder el header al scrollear hacia abajo
     let desplazamientoActual = window.scrollY;
@@ -45,8 +67,8 @@ window.onscroll = () => {
             header.style.top = '0';
         }, 300);
     }
-    else{
-        if(carrito.style.display == '' || carrito.style.display == 'none'){
+    else {
+        if(carrito.style.display !== 'flex' && getComputedStyle(brands).display !== 'flex'){
             setTimeout(() => {
                 header.style.top = '-6rem';
             }, 300);

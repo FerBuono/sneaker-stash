@@ -1,0 +1,132 @@
+@import 'globals/fonts', 'globals/variables', 'globals/keyframes', 'globals/colors', 'partials/header', 'partials/main', 'partials/footer';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+// HEADER
+
+.header {
+    border-bottom: 2px solid $red-color;
+}
+
+.logos {
+
+    &__divisor {
+        background-color: $red-color;
+        box-shadow: 0 0 10px $red-color;
+    }
+}
+
+.brands {
+
+    &__actual {
+
+        &::before, &::after {
+            background-color: $red-color;
+        }
+   }
+   
+   &__list {
+        border: 2px solid $red-color;
+        border-top: none;
+}
+}
+
+.carrito {
+
+    &__btn {
+
+        &__comprar {
+            background-color: $red-color;
+            border: 1px solid $red-color;
+        }
+    
+        &__vaciar {
+            border: 1px solid $red-color;
+    
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}
+
+.lista-carrito {
+    
+    tr {
+        box-shadow: 0 20px 1px -20px $red-color;
+    }
+}
+
+// MAIN //
+
+.main {
+   
+    &__banner {
+        
+        &__text {
+            animation: flicker-cyan 1.5s infinite alternate;
+        }
+    }
+    
+    &__divisor-bar {
+        border-top: 2px solid $red-color;
+        border-bottom: 2px solid $red-color;
+        box-shadow: 0 0 10px $red-color;
+        
+        &::before {
+            filter: invert(1);
+            background-image: url(../images/patterns/nike-pattern.jpg);
+            background-size: 40%;
+        }
+    }
+
+    &__shoes-title {
+        animation: flicker-cyan 1.5s infinite alternate;
+    }
+
+}
+
+.card {
+
+    &__contentBx {
+
+        h4 {
+            color: $red-color;
+        }
+
+        a {
+            background-color: $red-color;
+            border: 1px solid $red-color;
+        }
+    }
+
+    &::after {
+
+        background-image: url(../images/logos/nike-logo.png);
+    }
+   
+}
+
+.active {
+    border: 2px solid $red-color;
+    box-shadow: inset 0 0 2px black;
+}
+
+.footer {
+
+    &__divisor-bar {
+        border-top: 2px solid $red-color;
+        border-bottom: 2px solid $red-color;
+        box-shadow: 0 0 10px $red-color;
+
+        &::before {
+            filter: invert(1);
+            background-image: url(../images/patterns/nike-pattern.jpg);
+            background-size: 40%;
+        }
+    }
+}

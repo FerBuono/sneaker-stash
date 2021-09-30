@@ -50,24 +50,27 @@ const change = e => {
     // Cambios relacionados a la selección de color
     if(e.target.parentElement.classList.contains('color')) {
         
-        // Selección de color
-        e.target.classList.add('active');
-        siblings.forEach(sibling => sibling.classList.remove('active'));
+        if(!e.target.textContent) {
+            
+            // Selección de color
+            e.target.classList.add('active');
+            siblings.forEach(sibling => sibling.classList.remove('active'));
         
-        // Cambiar el color del círculo
-        const shoeImg = e.target.parentElement.parentElement.previousElementSibling.firstElementChild;
-        circle.style.backgroundColor = newCircleColor;
+            // Cambiar el color del círculo
+            const shoeImg = e.target.parentElement.parentElement.previousElementSibling.firstElementChild;
+            circle.style.backgroundColor = newCircleColor;
 
-        // Cambiar la imágen de acuerdo al color establecido
-        shoeImg.setAttribute('src', e.target.getAttribute('img-id'));
+            // Cambiar la imágen de acuerdo al color establecido
+            shoeImg.setAttribute('src', e.target.getAttribute('img-id'));
 
-        // Cambiar el color del boton size de acuerdo al color del circulo
-        const sizeBtn = Array.from(e.target.parentElement.previousElementSibling.children);
-        sizeBtn.forEach(btn => {
-            if(btn.style.backgroundColor !== '') {
-                btn.style.backgroundColor = newCircleColor;
-            };
-        });
+            // Cambiar el color del boton size de acuerdo al color del circulo
+            const sizeBtn = Array.from(e.target.parentElement.previousElementSibling.children);
+            sizeBtn.forEach(btn => {
+                if(btn.style.backgroundColor !== '') {
+                    btn.style.backgroundColor = newCircleColor;
+                };
+            });
+        };
     };
 };
 

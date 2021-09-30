@@ -40,6 +40,7 @@ const readCardData = card => {
         amount: 1
     };
     
+    console.log(product.image)
     // Chequear si el producto ya existe en el array
     const exist = cartProducts.some(card =>  {
         return card.name === product.name && card.size === product.size && card.image === product.image;
