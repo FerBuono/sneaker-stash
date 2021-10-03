@@ -104,6 +104,8 @@ class UI {
     // Método para mostrar el cart en el HTML
     printCart({cart}) {
         this.cleanCart();
+        
+        cart.sort((a, b) => a.price - b.price);
 
         cart.forEach(product => {
             const {name, image, size, price, amount} = product;
@@ -115,7 +117,7 @@ class UI {
                 </td>
                 <td width="200" class="name">${name}</td>
                 <td class="size">${size}</td>
-                <td>${price}</td>
+                <td>$${price}</td>
                 <td class="amount">${amount}</td>
                 <td>
                     <div class="buttons">
@@ -163,7 +165,6 @@ class UI {
 const cartAdmin = new Cart();
 const ui = new UI();
 
-
 /////////////////// Funciones ///////////////////
 
 // Función que agrega un producto al carrito
@@ -180,8 +181,8 @@ const addProduct = e => {
             const image = card.querySelector('.card__imgBx img').src;
             const size = card.querySelector('.size .active').textContent;
             const color = getComputedStyle(card.querySelector('.color .active')).backgroundColor;
-            const price = card.querySelector('.price p').textContent;
-        
+            const price = Number(card.querySelector('.price p span').textContent);
+            
             // Creo un nuevo objeto con esa info
             const newProduct = new Product(name, image, size, color, price);
 
@@ -245,9 +246,4 @@ clearCartBtn.addEventListener('click', clearCart);
 cartList.addEventListener('click', changeAmount);
 
 document.addEventListener('DOMContentLoaded', loadCart);
-
-
-
-
-
 
