@@ -35,15 +35,11 @@ const change = e => {
     // Cambios relacionados con la selección del size
     if(e.target.parentElement.classList.contains('size')) {
         
-        // Selección de size
-        e.target.style.setProperty('background-color', getComputedStyle(circle).backgroundColor);
-        if(e.target.style.backgroundColor !== '') {
-            siblings.forEach(sibling => sibling.style.backgroundColor = '');
-        };
-
-        e.target.classList.add('active');
-        if(e.target.classList.contains('active')) {
-            siblings.forEach(sibling => sibling.classList.remove('active'));
+        if(e.target.textContent.length <= 2) {
+            e.target.classList.add('active');
+            if(e.target.classList.contains('active')) {
+                siblings.forEach(sibling => sibling.classList.remove('active'));
+            };
         };
     };
 

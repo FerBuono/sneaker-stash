@@ -58,7 +58,6 @@ const hideHeader = () => {
 
 // Función para mostrar/esconder el header al scrollear
 window.onscroll = () => {
-    console.log(carrito.style.display)
 
     // Esconder el header al scrollear hacia abajo
     let desplazamientoActual = window.scrollY;
