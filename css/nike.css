@@ -252,7 +252,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 20px black;
   padding: 0 20px 10px 20px;
-  min-height: 250px;
+  min-height: 300px;
   max-height: 500px;
   min-width: 300px; }
   .carrito::before {
@@ -327,7 +327,8 @@
     background-color: black; }
   .lista-carrito td {
     padding: 8px 16px;
-    text-align: center; }
+    text-align: center;
+    height: 100px; }
   .lista-carrito .buttons {
     display: flex;
     flex-direction: column;

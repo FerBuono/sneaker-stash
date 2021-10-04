@@ -52,7 +52,7 @@ class Cart {
         };
 
         if(e.target.classList.contains('down-btn__img')){
-        
+            
             this.cart = this.cart.map(prod => {
                 if(prod.image === prodData.image && prod.size === prodData.size) {
                     prod.amount--;
@@ -74,8 +74,9 @@ class Cart {
 }
 
 class Product {
-    constructor(name, image, size, color, price) {
+    constructor(name, logo, image, size, color, price) {
         this.name = name;
+        this.logo = logo;
         this.image = image;
         this.size = size;
         this.color = color;
@@ -108,10 +109,13 @@ class UI {
         cart.sort((a, b) => a.price - b.price);
 
         cart.forEach(product => {
-            const {name, image, size, price, amount} = product;
+            const {name, logo, image, size, price, amount} = product;
             const row = document.createElement('tr');
             row.innerHTML=`
             <tr>
+                <td>
+                    <img src="${logo}" width="60" style="position: relative; z-index: -1;filter: invert(.5);">
+                </td>
                 <td>
                     <img src="${image}" width="100" class="image">
                 </td>
@@ -178,26 +182,28 @@ const addProduct = e => {
     
             // Leo la info de la card
             const name = card.querySelector('.card__contentBx h2').textContent;
+            const logo = document.querySelector('.brands__actual img').src
             const image = card.querySelector('.card__imgBx img').src;
             const size = card.querySelector('.size .active').textContent;
             const color = getComputedStyle(card.querySelector('.color .active')).backgroundColor;
             const price = Number(card.querySelector('.price p span').textContent);
             
             // Creo un nuevo objeto con esa info
-            const newProduct = new Product(name, image, size, color, price);
+            const newProduct = new Product(name, logo, image, size, color, price);
 
             if(cartAdmin.alreadyInCart(newProduct)) {
                 cartAdmin.updateAmount(newProduct);
             } else {
                 cartAdmin.addToCart(newProduct);
             };
+            
+            ui.printCart(cartAdmin);
+            
+            // Paso el carrito al local storage
+            toLocalStorage(cartAdmin);
         };
     };
 
-    ui.printCart(cartAdmin);
-    
-    // Paso el carrito al local storage
-    toLocalStorage(cartAdmin);
 };
 
 // Función para limpiar todo el carrito

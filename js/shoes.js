@@ -70,10 +70,6 @@ const change = e => {
     };
 };
 
-// Función que borra la selección del size al salir de una card
-const removeSize = 
-
-
 /////////////////// Eventos ///////////////////
 
 shoesList.addEventListener('click', change);

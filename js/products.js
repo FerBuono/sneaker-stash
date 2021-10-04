@@ -62,15 +62,10 @@ window.onscroll = () => {
     // Esconder el header al scrollear hacia abajo
     let desplazamientoActual = window.scrollY;
     if (ubicacionPrincipal >= desplazamientoActual){
-        setTimeout(() => {
-            header.style.top = '0';
-        }, 300);
-    }
-    else {
+        header.style.top = '0';
+    } else {
         if(carrito.style.display !== 'flex' && getComputedStyle(brands).display !== 'flex'){
-            setTimeout(() => {
-                header.style.top = '-6rem';
-            }, 300);
+            header.style.top = '-6rem';
         } else {
             header.style.top = '0';
         }
