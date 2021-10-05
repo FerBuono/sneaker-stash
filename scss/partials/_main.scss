@@ -156,10 +156,11 @@
         .size span {
             width: 26px;
             height: 26px;
-            text-align: center;
             line-height: 26px;
             font-size: 14px;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: black;
             background: white;
             margin: 0 5px;

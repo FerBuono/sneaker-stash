@@ -5,6 +5,7 @@
 
 const cartList = document.querySelector('#lista-carrito tbody');
 const clearCartBtn = document.querySelector('#vaciar-carrito');
+const buyBtn = document.querySelector('#comprar');
 const contador = document.querySelector('#contador');
 
 
@@ -106,8 +107,13 @@ class UI {
     printCart({cart}) {
         this.cleanCart();
         
+        // Ordeno la lista por precio
         cart.sort((a, b) => a.price - b.price);
 
+        // Precio total
+        const totalPrice = cart.reduce((sum, prod) => sum + (prod.price * prod.amount), 0)
+
+        // Muestro cada producto
         cart.forEach(product => {
             const {name, logo, image, size, price, amount} = product;
             const row = document.createElement('tr');
@@ -137,7 +143,14 @@ class UI {
             `;
             cartList.appendChild(row);
         });
-        this.changeCounter()
+
+        this.changeCounter();
+
+        if(totalPrice > 0) {
+            buyBtn.innerHTML = `Buy Now! <span>($${totalPrice})</span>`;
+        } else {
+            buyBtn.textContent = 'Buy Now!';
+        }
     }
 
     // Método para limpiar el HTML del carrito así no se duplican los productos
@@ -147,6 +160,9 @@ class UI {
         }
 
         this.changeCounter();
+    
+        buyBtn.textContent = 'Buy Now!'
+
     }
 
     // Método para cambiar el contador de productos del carrito

@@ -286,6 +286,8 @@
       padding: .5em 0; }
       .carrito__btn__comprar:hover {
         color: white; }
+      .carrito__btn__comprar span {
+        font-weight: 400; }
     .carrito__btn__vaciar {
       position: relative;
       z-index: 10;
@@ -483,10 +485,11 @@
     .card__contentBx .size span {
       width: 26px;
       height: 26px;
-      text-align: center;
       line-height: 26px;
       font-size: 14px;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: black;
       background: white;
       margin: 0 5px;

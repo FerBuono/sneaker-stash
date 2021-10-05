@@ -21,7 +21,7 @@ const showHeader = e => {
     let offset = window.scrollY;
     let difference = vertical - offset;
 
-    if(offset > 0) {
+    if(window.scrollY > 0) {
         if(difference <= 100) {
             header.style.top = '0';
             header.style.backgroundColor = 'black';
@@ -35,14 +35,16 @@ const showHeader = e => {
         };
 
     } else {
-        header.style.top = '0';
         if(difference <= 100) {
+            header.style.top = '0';
             header.style.backgroundColor = 'black';
             brands.style.backgroundColor = 'black';
         } else if(getComputedStyle(brands).display === 'flex' || carrito.style.display === 'flex') {
-                header.style.backgroundColor = 'black';
-                brands.style.backgroundColor = 'black';
+            header.style.top = '0';
+            header.style.backgroundColor = 'black';
+            brands.style.backgroundColor = 'black';
         } else {
+            header.style.top = '0';
             header.style.backgroundColor = 'transparent';
             brands.style.backgroundColor = 'transparent';
         };
@@ -51,9 +53,12 @@ const showHeader = e => {
 
 // Función para esconder el header cuando sacas el mouse de encima
 const hideHeader = () => {
-    if(window.scrollY > 0) {
-        header.onmouseleave = () => header.style.top = '-6rem';  
-    };
+
+    if(window.scrollY <= 0) {
+        header.onmouseleave = () => header.style.top = '0';  
+    } else {
+        header.onmouseleave = () => header.style.top = '-6rem';
+    }
 };
 
 // Función para mostrar/esconder el header al scrollear
