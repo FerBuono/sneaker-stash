@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-sass-home": "nodemon -e scss -x \"npm run build-sass-home\"",
     "build-sass-home": "node-sass --include-path scss scss/home.scss css/home.css",
+    "watch-sass-cart": "nodemon -e scss -x \"npm run build-sass-cart\"",
+    "build-sass-cart": "node-sass --include-path scss scss/cart.scss css/cart.css",
     "watch-sass-adidas": "nodemon -e scss -x \"npm run build-sass-adidas\"",
     "build-sass-adidas": "node-sass --include-path scss scss/adidas.scss css/adidas.css",
     "watch-sass-nike": "nodemon -e scss -x \"npm run build-sass-nike\"",

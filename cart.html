@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon">
+    <title>Sneaker Stash - Choose a brand!</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <!-- SELECCIONAR MARCA -->
+            <section class="logos">
+                <a href="index.html" class="logos__home">
+                    <img src="images/logos/logo-simple.png" alt="">
+                </a>
+            </section>
+        </div>
+    </header>
+
+    <main class='main'>
+        <section class="tablas-container">
+            <div class="carrito" id="carrito">
+                <table class="lista-carrito" id="lista-carrito">
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="carrito__btn">
+                    <a href="cart.html" id="volver" class="carrito__btn__volver">Keep Buying</a>
+                    <a href="#" id="vaciar-carrito" class="carrito__btn__vaciar">Clear cart</a>
+                    <a href="#" id="checkout" class="carrito__btn__checkout">Go to checkout</a>
+                </div>
+            </div>
+            <div class='total' id='total'>
+                <table class="lista-precios" id="lista-precios">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="total__total"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main/cart.js"></script>
+</body>
+</html>
