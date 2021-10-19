@@ -12,7 +12,9 @@
     "watch-sass-adidas": "nodemon -e scss -x \"npm run build-sass-adidas\"",
     "build-sass-adidas": "node-sass --include-path scss scss/adidas.scss css/adidas.css",
     "watch-sass-nike": "nodemon -e scss -x \"npm run build-sass-nike\"",
-    "build-sass-nike": "node-sass --include-path scss scss/nike.scss css/nike.css"
+    "build-sass-nike": "node-sass --include-path scss scss/nike.scss css/nike.css",
+    "watch-sass-jordan": "nodemon -e scss -x \"npm run build-sass-jordan\"",
+    "build-sass-jordan": "node-sass --include-path scss scss/jordan.scss css/jordan.css"
   },
   "keywords": [],
   "author": "",

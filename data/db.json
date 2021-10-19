@@ -1,0 +1,549 @@
+{
+    "adidas": [
+        {
+            "name": "YEEZY BOOST 350",
+            "collab": "",
+            "price": 150,
+            "models": [
+                {
+                    "color": "bordeaux",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-bordeaux.png"
+                },
+                {
+                    "color": "orange-pink",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-orange.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-black.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-white.png"
+                }
+            ]
+        },
+        {
+            "name": "YEEZY BOOST 700",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "blue-green",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-green.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-grey.png"
+                },
+                {
+                    "color": "light-orange",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-orange.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_Hu",
+            "collab": "x Pharrell Williams",
+            "price": 250,
+            "models": [
+                {
+                    "color": "dark-purple",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-violet.png"
+                },
+                {
+                    "color": "orangered",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-orange.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-yellow.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-cream.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_R1",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-black.png"
+                },
+                {
+                    "color": "muted-lime",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-muted-lime.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "FORUM EXHIBIT LOW",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "pantone",
+                    "img": "images/shoes/adidas/forum/forum-violet.png"
+                },
+                {
+                    "color": "gree-white",
+                    "img": "images/shoes/adidas/forum/forum-beige.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/adidas/forum/forum-red.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_R1 V2",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "toasted",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-beige.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-black.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-white.png"
+                }
+            ]
+        },
+        {
+            "name": "RETROPY P9",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "blue",
+                    "img": "images/shoes/adidas/retropy p9/retropy-blue.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/retropy p9/retropy-black.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_R1 SPECTOO",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "pink",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-pink.png"
+                },
+                {
+                    "color": "dark-purple",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-purple.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-black.png"
+                }
+            ]
+        },
+        {
+            "name": "ZX 2K BOOST",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "yellowgreen",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-limegreen.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-fluorgreen.png"
+                },
+                {
+                    "color": "orangered",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-orange.png"
+                }
+            ]
+        }
+    ],
+
+
+
+
+    "nike": [
+        {
+            "name": "OVERBREAK SP",
+            "collab": "x Undercover",
+            "price": 200,
+            "models": [
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/overbreak-sp-undercover/overbreak-undercover-cream.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/overbreak-sp-undercover/overbreak-undercover-black.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 07' LV8",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "darkerblue",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-darkblue.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-orangeyellow.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-black.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-red.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 07' PRM",
+            "collab": "",
+            "price": 120,
+            "models": [
+                {
+                    "color": "darkgreen",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-neongreen.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-pink.png"
+                },
+                {
+                    "color": "cyan",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-cyan.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-red.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-blackwhite.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 270 REACT",
+            "collab": "x Travis Scott",
+            "price": 300,
+            "models": [
+                {
+                    "color": "darkerorange",
+                    "img": "images/shoes/nike/air-max-270-react-ts/air-max-270-react-ts.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 SHADOW",
+            "collab": "",
+            "price": 120,
+            "models": [
+                {
+                    "color": "lightcyan",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightcyan.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightpink.png"
+                },
+                {
+                    "color": "light-orange",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightorange.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-red.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 90",
+            "collab": "",
+            "price": 150,
+            "models": [
+                {
+                    "color": "green",
+                    "img": "images/shoes/nike/air-max-90/air-max-green.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/nike/air-max-90/air-max-blue.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-max-90/air-max-red.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-max-90/air-max-lightblue.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/nike/air-max-90/air-max-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "SB DUNK LOW",
+            "collab": "x Travis Scott",
+            "price": 250,
+            "models": [
+                {
+                    "color": "toasted",
+                    "img": "images/shoes/nike/sb-dunk-low-ts/sb-dunk-ts.png"
+                }
+            ]
+        },
+        {
+            "name": "SB DUNK LOW",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-ligtblue.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-beige.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-red.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-orangered.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 97",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-max-97/air-max-black.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/nike/air-max-97/air-max-grey.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-max-97/air-max-white.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR RUBBER DUNK",
+            "collab": "x Off-White",
+            "price": 320,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-lightblue.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-black.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-orange.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 270 REACT",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "blue",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-blue.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-lightpink.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-green.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 LOW",
+            "collab": "x Travis Scott",
+            "price": 180,
+            "models": [
+                {
+                    "color": "darkerorange",
+                    "img": "images/shoes/nike/air-force-1-low-ts/air-force-yellow.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/air-force-1-low-ts/air-force-cream.png"
+                }
+            ]
+        }
+    ],
+
+
+
+
+    "jordan": [
+        {
+            "name": "AJ 1 HIGH",
+            "collab": "",
+            "price": 250,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/jordan/air-jordan-1-high/aj-1-red-black.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/jordan/air-jordan-1-high/aj-1-blue.png"
+                },
+                {
+                    "color": "darkgreen",
+                    "img": "images/shoes/jordan/air-jordan-1-high/aj-1-green.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/jordan/air-jordan-1-high/aj-1-red.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH OG",
+            "collab": "",
+            "price": 320,
+            "models": [
+                {
+                    "color": "red",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-red.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-black.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-cream.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-grey.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-lightblue.png"
+                },
+                {
+                    "color": "lightcyan",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og/aj-1-og-lightgreen.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 HIGH ZOOM",
+            "collab": "",
+            "price": 280,
+            "models": [
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/jordan/air-jordan-1-high-zoom/coral.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/jordan/air-jordan-1-high-zoom/black.png"
+                },
+                {
+                    "color": "pink",
+                    "img": "images/shoes/jordan/air-jordan-1-high-zoom/pink.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/jordan/air-jordan-1-high-zoom/white.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 LOW SE",
+            "collab": "",
+            "price": 200,
+            "models": [
+                {
+                    "color": "mint-green",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/mint-green.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/black.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/blue.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/white.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH",
+            "collab": "x Dior",
+            "price": 400,
+            "models": [
+                {
+                    "color": "grey",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-dior/aj-1-dior-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH OG",
+            "collab": "x Travis Scott",
+            "price": 450,
+            "models": [
+                {
+                    "color": "mocha",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-mocha.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-blue.png"
+                }
+            ]
+        }
+    ]
+}
