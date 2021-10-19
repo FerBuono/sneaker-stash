@@ -177,7 +177,7 @@ const getURL = () => {
     
     if(oldURL.includes('nike')) {
         document.documentElement.style.setProperty('--color', '#FA1E1E');
-        document.documentElement.style.setProperty('--background-image', 'url("../images/backgrounds/nike2.jpg")');
+        document.documentElement.style.setProperty('--background-image', 'url("../images/backgrounds/nike.jpg")');
     } else if(oldURL.includes('adidas')) {
         document.documentElement.style.setProperty('--color', '#9bdc28');
         document.documentElement.style.setProperty('--background-image', 'url("../images/backgrounds/adidas.jpg")');

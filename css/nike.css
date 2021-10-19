@@ -525,7 +525,7 @@
       text-align: center;
       color: black;
       font-weight: 600;
-      border-radius: 5px;
+      border-radius: 5px 5px 50px 5px;
       padding: .5em 0; }
       .carrito__btn__comprar:hover {
         color: white; }
