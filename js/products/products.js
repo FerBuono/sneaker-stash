@@ -24,29 +24,19 @@ const showHeader = e => {
     if(window.scrollY > 0) {
         if(difference <= 100) {
             header.style.top = '0';
-            header.style.backgroundColor = 'black';
-            brands.style.backgroundColor = 'black';
         } else {
             if(getComputedStyle(brands).display === 'flex' || carrito.style.display === 'flex') {
                 header.style.top = '0';
-                header.style.backgroundColor = 'black';
-                brands.style.backgroundColor = 'black';
             }; 
         };
 
     } else {
         if(difference <= 100) {
             header.style.top = '0';
-            header.style.backgroundColor = 'black';
-            brands.style.backgroundColor = 'black';
         } else if(getComputedStyle(brands).display === 'flex' || carrito.style.display === 'flex') {
             header.style.top = '0';
-            header.style.backgroundColor = 'black';
-            brands.style.backgroundColor = 'black';
         } else {
             header.style.top = '0';
-            header.style.backgroundColor = 'transparent';
-            brands.style.backgroundColor = 'transparent';
         };
     };
 };
@@ -77,16 +67,6 @@ window.onscroll = () => {
 
     };
     ubicacionPrincipal = desplazamientoActual;
-    
-    // Cambiar el background-color del header y marcas cuando scrollY > 100
-    if(ubicacionPrincipal > 100) {
-        header.style.backgroundColor = 'black'
-        brands.style.backgroundColor = 'black'
-        
-    } else {
-        header.style.backgroundColor = 'transparent'
-        brands.style.backgroundColor = 'transparent'
-    };
 };
 
 

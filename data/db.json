@@ -1,8 +1,27 @@
 {
     "adidas": [
         {
-            "name": "YEEZY BOOST 350",
+            "name": "NMD_R1",
             "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-black.png"
+                },
+                {
+                    "color": "muted-lime",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-muted-lime.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "YEEZY BOOST 350",
+            "collab": "x Kanye West",
             "price": 150,
             "models": [
                 {
@@ -24,21 +43,21 @@
             ]
         },
         {
-            "name": "YEEZY BOOST 700",
+            "name": "FORUM EXHIBIT LOW",
             "collab": "",
-            "price": 180,
+            "price": 100,
             "models": [
                 {
-                    "color": "blue-green",
-                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-green.png"
+                    "color": "pantone",
+                    "img": "images/shoes/adidas/forum/forum-violet.png"
                 },
                 {
-                    "color": "grey",
-                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-grey.png"
+                    "color": "gree-white",
+                    "img": "images/shoes/adidas/forum/forum-beige.png"
                 },
                 {
-                    "color": "light-orange",
-                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-orange.png"
+                    "color": "red",
+                    "img": "images/shoes/adidas/forum/forum-red.png"
                 }
             ]
         },
@@ -66,40 +85,21 @@
             ]
         },
         {
-            "name": "NMD_R1",
-            "collab": "",
-            "price": 100,
+            "name": "YEEZY BOOST 700",
+            "collab": "x Kanye West",
+            "price": 180,
             "models": [
                 {
-                    "color": "black",
-                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-black.png"
-                },
-                {
-                    "color": "muted-lime",
-                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-muted-lime.png"
+                    "color": "blue-green",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-green.png"
                 },
                 {
                     "color": "grey",
-                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-grey.png"
-                }
-            ]
-        },
-        {
-            "name": "FORUM EXHIBIT LOW",
-            "collab": "",
-            "price": 100,
-            "models": [
-                {
-                    "color": "pantone",
-                    "img": "images/shoes/adidas/forum/forum-violet.png"
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-grey.png"
                 },
                 {
-                    "color": "gree-white",
-                    "img": "images/shoes/adidas/forum/forum-beige.png"
-                },
-                {
-                    "color": "red",
-                    "img": "images/shoes/adidas/forum/forum-red.png"
+                    "color": "light-orange",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-orange.png"
                 }
             ]
         },

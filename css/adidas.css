@@ -17,86 +17,98 @@
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
 
-.black {
-  background-color: #232325; }
-
-.muted-lime {
-  background-color: #CFC97C; }
-
-.grey {
-  background-color: grey; }
-
-.pantone {
-  background-color: #815765; }
-
-.green-white {
-  background-color: #DCDCD2; }
-
-.toasted {
-  background-color: #BFA579; }
-
 .white {
   background-color: white; }
-
-.blue {
-  background-color: #013789; }
-
-.lightblue {
-  background-color: #007FB6; }
-
-.pink {
-  background-color: pink; }
-
-.lightpink {
-  background-color: #E3B19D; }
-
-.dark-purple {
-  background-color: #302041; }
-
-.yellowgreen {
-  background-color: #D5E171; }
-
-.light-orange {
-  background-color: #FF925E; }
-
-.orangered {
-  background-color: orangered; }
-
-.darkerorange {
-  background-color: #C86225; }
-
-.orange-pink {
-  background-color: #D8A98B; }
-
-.green {
-  background: #9bdc28; }
-
-.darkgreen {
-  background-color: #0E6739; }
-
-.red {
-  background: #FA1E1E; }
-
-.cyan {
-  background: #36F5F5; }
-
-.lightcyan {
-  background-color: lightcyan; }
-
-.blue-green {
-  background-color: #1B474A; }
-
-.bordeaux {
-  background-color: #785954; }
-
-.yellow {
-  background-color: #FABB00; }
 
 .cream {
   background-color: #E4D8C7; }
 
+.green-white {
+  background-color: #DCDCD2; }
+
+.lightcyan {
+  background-color: lightcyan; }
+
+.pink {
+  background-color: pink; }
+
+.pantone {
+  background-color: #815765; }
+
+.mocha {
+  background-color: #5A4C43; }
+
+.bordeaux {
+  background-color: #785954; }
+
+.lightpink {
+  background-color: #E3B19D; }
+
+.orange-pink {
+  background-color: #D8A98B; }
+
+.light-orange {
+  background-color: #FF925E; }
+
+.darkerorange {
+  background-color: #C86225; }
+
+.muted-lime {
+  background-color: #CFC97C; }
+
+.yellow {
+  background-color: #FABB00; }
+
+.toasted {
+  background-color: #BFA579; }
+
+.green {
+  background: #9bdc28; }
+
+.blue-green {
+  background-color: #1B474A; }
+
+.militar-green {
+  background-color: #545841; }
+
+.grey {
+  background-color: grey; }
+
+.mint-green {
+  background-color: #00B7AC; }
+
+.darkgreen {
+  background-color: #0E6739; }
+
+.cyan {
+  background: #36F5F5; }
+
+.lightblue {
+  background-color: #007FB6; }
+
+.blue {
+  background-color: #013789; }
+
+.yellowgreen {
+  background-color: #D5E171; }
+
+.orangered {
+  background-color: orangered; }
+
+.carmine {
+  background-color: #862237; }
+
+.red {
+  background: #FA1E1E; }
+
+.dark-purple {
+  background-color: #302041; }
+
 .darkerblue {
   background-color: #2D2F38; }
+
+.black {
+  background-color: #232325; }
 
 .header {
   position: fixed;
@@ -107,7 +119,7 @@
   align-items: flex-end;
   width: 100%;
   height: 6rem;
-  background-color: transparent;
+  background-color: black;
   transition: 0.2s; }
   .header__container {
     position: relative;
@@ -185,7 +197,8 @@
     top: 100%;
     border-radius: 0 0 10% 10%;
     overflow: hidden;
-    transition: 0.2s; }
+    transition: 0.2s;
+    background-color: black; }
     .brands__list__logos {
       display: flex;
       justify-content: center;
@@ -237,128 +250,6 @@
       color: white;
       background-color: red; }
 
-.carrito {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  right: -50px;
-  top: 100%;
-  z-index: 10;
-  backdrop-filter: blur(5px);
-  color: white;
-  border: 1px solid white;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 20px black;
-  padding: 0 20px 10px 20px;
-  min-height: 300px;
-  max-height: 500px;
-  min-width: 300px; }
-  .carrito::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    border-radius: 30px;
-    background-image: linear-gradient(black, rgba(0, 0, 0, 0.8));
-    filter: blur(5px); }
-  .carrito__btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 1em 0; }
-    .carrito__btn__comprar {
-      position: relative;
-      z-index: 10;
-      display: block;
-      width: 45%;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      color: black;
-      font-weight: 600;
-      border-radius: 5px;
-      padding: .5em 0; }
-      .carrito__btn__comprar:hover {
-        color: white; }
-      .carrito__btn__comprar span {
-        font-weight: 400; }
-    .carrito__btn__vaciar {
-      position: relative;
-      z-index: 10;
-      display: block;
-      width: 45%;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      color: white;
-      font-weight: 200;
-      background-color: black;
-      border-radius: 5px;
-      padding: .5em 0;
-      transition: 0.3s; }
-      .carrito__btn__vaciar:hover {
-        color: grey; }
-
-.lista-carrito {
-  position: relative;
-  display: block;
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-  overflow-y: scroll;
-  z-index: 10; }
-  .lista-carrito thead {
-    position: relative;
-    display: table-header-group;
-    width: 100%; }
-  .lista-carrito th {
-    padding: 12px 16px;
-    margin: 0;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    font-weight: 600;
-    font-size: large;
-    border: none;
-    background-color: black; }
-  .lista-carrito td {
-    padding: 8px 16px;
-    text-align: center;
-    height: 100px; }
-  .lista-carrito .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%; }
-    .lista-carrito .buttons .up-btn, .lista-carrito .buttons .down-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 20px;
-      height: 10px;
-      margin: 5px 0;
-      overflow: hidden; }
-      .lista-carrito .buttons .up-btn__img, .lista-carrito .buttons .down-btn__img {
-        width: 100%; }
-      .lista-carrito .buttons .up-btn:hover, .lista-carrito .buttons .down-btn:hover {
-        filter: invert(0.5); }
-  .lista-carrito::-webkit-scrollbar {
-    width: 10px; }
-  .lista-carrito::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px; }
-  .lista-carrito::-webkit-scrollbar-thumb {
-    background-color: #1d1d1d;
-    border-radius: 10px; }
-    .lista-carrito::-webkit-scrollbar-thumb:hover {
-      background-color: #111; }
-
 .main {
   background-color: #131313;
   padding-bottom: 8rem; }
@@ -371,15 +262,6 @@
       width: 100%;
       object-position: center;
       object-fit: cover; }
-    .main__banner__text {
-      position: absolute;
-      top: 30%;
-      right: 15%;
-      width: 50%;
-      font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
-      font-size: 100px;
-      color: white;
-      text-align: right; }
   .main__divisor-bar {
     position: relative;
     display: flex;
@@ -598,6 +480,128 @@
       background-size: 20%;
       background-position: top; }
 
+.carrito {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  right: -50px;
+  top: 100%;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px black;
+  padding: 0 20px 10px 20px;
+  min-height: 300px;
+  max-height: 500px;
+  min-width: 300px; }
+  .carrito::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    border-radius: 30px;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.8));
+    filter: blur(5px); }
+  .carrito__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1em 0; }
+    .carrito__btn__comprar {
+      position: relative;
+      z-index: 10;
+      display: block;
+      width: 45%;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+      font-weight: 600;
+      border-radius: 5px;
+      padding: .5em 0; }
+      .carrito__btn__comprar:hover {
+        color: white; }
+      .carrito__btn__comprar span {
+        font-weight: 400; }
+    .carrito__btn__vaciar {
+      position: relative;
+      z-index: 10;
+      display: block;
+      width: 45%;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      font-weight: 200;
+      background-color: black;
+      border-radius: 5px;
+      padding: .5em 0;
+      transition: 0.3s; }
+      .carrito__btn__vaciar:hover {
+        color: grey; }
+
+.lista-carrito {
+  position: relative;
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: scroll;
+  z-index: 10; }
+  .lista-carrito thead {
+    position: relative;
+    display: table-header-group;
+    width: 100%; }
+  .lista-carrito th {
+    padding: 12px 16px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    border: none;
+    background-color: black; }
+  .lista-carrito td {
+    padding: 8px 16px;
+    text-align: center;
+    height: 100px; }
+  .lista-carrito .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; }
+    .lista-carrito .buttons .up-btn, .lista-carrito .buttons .down-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 10px;
+      margin: 5px 0;
+      overflow: hidden; }
+      .lista-carrito .buttons .up-btn__img, .lista-carrito .buttons .down-btn__img {
+        width: 100%; }
+      .lista-carrito .buttons .up-btn:hover, .lista-carrito .buttons .down-btn:hover {
+        filter: invert(0.5); }
+  .lista-carrito::-webkit-scrollbar {
+    width: 10px; }
+  .lista-carrito::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; }
+  .lista-carrito::-webkit-scrollbar-thumb {
+    background-color: #1d1d1d;
+    border-radius: 10px; }
+    .lista-carrito::-webkit-scrollbar-thumb:hover {
+      background-color: #111; }
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -629,8 +633,8 @@
 .lista-carrito tr {
   box-shadow: 0 20px 1px -20px #9bdc28; }
 
-.main__banner__text {
-  animation: flicker-red 1.5s infinite alternate; }
+.main__banner__bg {
+  object-position: top; }
 
 .main__divisor-bar {
   border-top: 2px solid #9bdc28;

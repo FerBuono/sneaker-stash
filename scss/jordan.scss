@@ -25,7 +25,8 @@
     &__actual {
 
         &::before, &::after {
-            background-color: $cyan-color;
+            filter: invert(1);
+            background-color: $green-color;
         }
    }
    

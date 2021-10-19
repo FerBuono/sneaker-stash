@@ -67,8 +67,8 @@
    
     &__banner {
         
-        &__text {
-            animation: flicker-red 1.5s infinite alternate;
+        &__bg {
+            object-position: top;
         }
     }
     

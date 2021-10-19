@@ -119,7 +119,7 @@
   align-items: flex-end;
   width: 100%;
   height: 6rem;
-  background-color: transparent;
+  background-color: black;
   transition: 0.2s; }
   .header__container {
     position: relative;
@@ -197,7 +197,8 @@
     top: 100%;
     border-radius: 0 0 10% 10%;
     overflow: hidden;
-    transition: 0.2s; }
+    transition: 0.2s;
+    background-color: black; }
     .brands__list__logos {
       display: flex;
       justify-content: center;
@@ -261,15 +262,6 @@
       width: 100%;
       object-position: center;
       object-fit: cover; }
-    .main__banner__text {
-      position: absolute;
-      top: 30%;
-      right: 15%;
-      width: 50%;
-      font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
-      font-size: 100px;
-      color: white;
-      text-align: right; }
   .main__divisor-bar {
     position: relative;
     display: flex;
@@ -623,7 +615,8 @@
   box-shadow: 0 0 10px #36F5F5; }
 
 .brands__actual::before, .brands__actual::after {
-  background-color: #36F5F5; }
+  filter: invert(1);
+  background-color: #9bdc28; }
 
 .brands__list {
   border: 2px solid #36F5F5;
