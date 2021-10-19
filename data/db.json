@@ -511,21 +511,6 @@
             ]
         },
         {
-            "name": "AJ 1 RETRO HIGH OG",
-            "collab": "x Travis Scott",
-            "price": 450,
-            "models": [
-                {
-                    "color": "mocha",
-                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-mocha.png"
-                },
-                {
-                    "color": "blue",
-                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-blue.png"
-                }
-            ]
-        },
-        {
             "name": "AJ 6 RETRO",
             "collab": "x Travis Scott",
             "price": 380,
@@ -537,6 +522,21 @@
                 {
                     "color": "militar-green",
                     "img": "images/shoes/jordan/air-jordan-6-retro-ts/olivegreen.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH OG",
+            "collab": "x Travis Scott",
+            "price": 450,
+            "models": [
+                {
+                    "color": "mocha",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-mocha.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-blue.png"
                 }
             ]
         },
