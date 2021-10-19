@@ -254,6 +254,9 @@
   background-color: #131313;
   padding-bottom: 8rem; }
   .main__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: calc(100vh - 1.5rem);
     z-index: 6; }
@@ -262,6 +265,16 @@
       width: 100%;
       object-position: center;
       object-fit: cover; }
+    .main__banner__title {
+      position: absolute;
+      right: 15%;
+      top: 35%;
+      z-index: 10;
+      font-family: 'Covered By Your Grace', 'Poppins';
+      text-align: end;
+      font-size: 100px;
+      color: white;
+      animation: flicker-cyan 2s infinite alternate; }
   .main__divisor-bar {
     position: relative;
     display: flex;
@@ -634,7 +647,7 @@
   box-shadow: 0 20px 1px -20px #FA1E1E; }
 
 .main__banner__bg {
-  filter: grayscale(0.2); }
+  object-position: top; }
 
 .main__banner__text {
   animation: flicker-cyan 1.5s infinite alternate; }
