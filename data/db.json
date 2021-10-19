@@ -443,6 +443,104 @@
             ]
         },
         {
+            "name": "AJ 4 RETRO",
+            "collab": "x Off-White",
+            "price": 400,
+            "models": [
+                {
+                    "color": "cream",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-offwhite/cream.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH",
+            "collab": "x Off-White",
+            "price": 450,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/jordan/air-jordan-1-high-retro-offwhite/blue.png"
+                },
+                {
+                    "color": "lightcyan",
+                    "img": "images/shoes/jordan/air-jordan-1-high-retro-offwhite/lightcyan.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/jordan/air-jordan-1-high-retro-offwhite/red.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/jordan/air-jordan-1-high-retro-offwhite/yellow.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH",
+            "collab": "x Dior",
+            "price": 400,
+            "models": [
+                {
+                    "color": "grey",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-dior/aj-1-dior-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 LOW SE",
+            "collab": "",
+            "price": 200,
+            "models": [
+                {
+                    "color": "mint-green",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/mint-green.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/black.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/blue.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/jordan/air-jordan-1-low-se/white.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 1 RETRO HIGH OG",
+            "collab": "x Travis Scott",
+            "price": 450,
+            "models": [
+                {
+                    "color": "mocha",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-mocha.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-blue.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 6 RETRO",
+            "collab": "x Travis Scott",
+            "price": 380,
+            "models": [
+                {
+                    "color": "cream",
+                    "img": "images/shoes/jordan/air-jordan-6-retro-ts/cream.png"
+                },
+                {
+                    "color": "militar-green",
+                    "img": "images/shoes/jordan/air-jordan-6-retro-ts/olivegreen.png"
+                }
+            ]
+        },
+        {
             "name": "AJ 1 RETRO HIGH OG",
             "collab": "",
             "price": 320,
@@ -474,6 +572,48 @@
             ]
         },
         {
+            "name": "AJ 4 RETRO",
+            "collab": "x Travis Scott",
+            "price": 400,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-ts/blue.png"
+                },
+                {
+                    "color": "mocha",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-ts/lightbrown.png"
+                },
+                {
+                    "color": "purple",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-ts/purple.png"
+                }
+            ]
+        },
+        {
+            "name": "AJ 6 RETRO",
+            "collab": "",
+            "price": 200,
+            "models": [
+                {
+                    "color": "carmine",
+                    "img": "images/shoes/jordan/air-jordan-6-retro/carmine.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/jordan/air-jordan-6-retro/lightpink.png"
+                },
+                {
+                    "color": "green",
+                    "img": "images/shoes/jordan/air-jordan-6-retro/neongreen.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/jordan/air-jordan-6-retro/red.png"
+                }
+            ]
+        },
+        {
             "name": "AJ 1 HIGH ZOOM",
             "collab": "",
             "price": 280,
@@ -497,53 +637,27 @@
             ]
         },
         {
-            "name": "AJ 1 LOW SE",
-            "collab": "",
-            "price": 200,
+            "name": "AJ 4 RETRO",
+            "collab": "x Union LA",
+            "price": 380,
             "models": [
                 {
-                    "color": "mint-green",
-                    "img": "images/shoes/jordan/air-jordan-1-low-se/mint-green.png"
-                },
-                {
                     "color": "black",
-                    "img": "images/shoes/jordan/air-jordan-1-low-se/black.png"
+                    "img": "images/shoes/jordan/air-jordan-4-retro-union-la/black.png"
                 },
                 {
-                    "color": "blue",
-                    "img": "images/shoes/jordan/air-jordan-1-low-se/blue.png"
+                    "color": "lightpink",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-union-la/lightpink.png"
+                },
+                {
+                    "color": "toasted",
+                    "img": "images/shoes/jordan/air-jordan-4-retro-union-la/mustard.png"
                 },
                 {
                     "color": "white",
-                    "img": "images/shoes/jordan/air-jordan-1-low-se/white.png"
+                    "img": "images/shoes/jordan/air-jordan-4-retro-union-la/white.png"
                 }
             ]
-        },
-        {
-            "name": "AJ 1 RETRO HIGH",
-            "collab": "x Dior",
-            "price": 400,
-            "models": [
-                {
-                    "color": "grey",
-                    "img": "images/shoes/jordan/air-jordan-1-retro-high-dior/aj-1-dior-grey.png"
-                }
-            ]
-        },
-        {
-            "name": "AJ 1 RETRO HIGH OG",
-            "collab": "x Travis Scott",
-            "price": 450,
-            "models": [
-                {
-                    "color": "mocha",
-                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-mocha.png"
-                },
-                {
-                    "color": "blue",
-                    "img": "images/shoes/jordan/air-jordan-1-retro-high-og-ts/aj-1-ts-blue.png"
-                }
-            ]
-        }
+        }   
     ]
 }
