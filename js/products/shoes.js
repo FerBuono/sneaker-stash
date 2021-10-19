@@ -12,7 +12,7 @@ const cards = Array.from(document.querySelectorAll('.card'));
 window.onload = () => {
     setTimeout(() => {
         const circles = Array.from(document.querySelectorAll('.card__circle'));
-        console.log(circles);
+
         circles.forEach(circle => {
             const colorElement = circle.parentElement.querySelector('#colors .active');
             circle.style.backgroundColor = getComputedStyle(colorElement).backgroundColor;

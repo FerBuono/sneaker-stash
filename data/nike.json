@@ -1,0 +1,236 @@
+{
+    "nike": [
+        {
+            "name": "OVERBREAK SP",
+            "collab": "x Undercover",
+            "price": 200,
+            "models": [
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/overbreak-sp-undercover/overbreak-undercover-cream.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/overbreak-sp-undercover/overbreak-undercover-black.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 07' LV8",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "darkerblue",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-darkblue.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-orangeyellow.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-black.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-07-lv8/air-force-red.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 07' PRM",
+            "collab": "",
+            "price": 120,
+            "models": [
+                {
+                    "color": "darkgreen",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-neongreen.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-pink.png"
+                },
+                {
+                    "color": "cyan",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-cyan.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-red.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-force-1-07-prm/air-force-blackwhite.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 270 REACT",
+            "collab": "x Travis Scott",
+            "price": 300,
+            "models": [
+                {
+                    "color": "darkerorange",
+                    "img": "images/shoes/nike/air-max-270-react-ts/air-max-270-react-ts.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 SHADOW",
+            "collab": "",
+            "price": 120,
+            "models": [
+                {
+                    "color": "lightcyan",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightcyan.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightpink.png"
+                },
+                {
+                    "color": "light-orange",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-lightorange.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/air-force-1-shadow/air-shadow-red.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 90",
+            "collab": "",
+            "price": 150,
+            "models": [
+                {
+                    "color": "green",
+                    "img": "images/shoes/nike/air-max-90/air-max-green.png"
+                },
+                {
+                    "color": "blue",
+                    "img": "images/shoes/nike/air-max-90/air-max-blue.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-max-90/air-max-red.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-max-90/air-max-lightblue.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/nike/air-max-90/air-max-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "SB DUNK LOW",
+            "collab": "x Travis Scott",
+            "price": 250,
+            "models": [
+                {
+                    "color": "toasted",
+                    "img": "images/shoes/nike/sb-dunk-low-ts/sb-dunk-ts.png"
+                }
+            ]
+        },
+        {
+            "name": "SB DUNK LOW",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-ligtblue.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-beige.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-red.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/nike/sb-dunk-low/sb-dunk-orangered.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 97",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-max-97/air-max-black.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/nike/air-max-97/air-max-grey.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/nike/air-max-97/air-max-white.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR RUBBER DUNK",
+            "collab": "x Off-White",
+            "price": 320,
+            "models": [
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-lightblue.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-black.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/nike/air-rubber-dunk-offwhite/air-rubber-orange.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR MAX 270 REACT",
+            "collab": "",
+            "price": 180,
+            "models": [
+                {
+                    "color": "blue",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-blue.png"
+                },
+                {
+                    "color": "lightpink",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-lightpink.png"
+                },
+                {
+                    "color": "lightblue",
+                    "img": "images/shoes/nike/air-max-270-react/air-max-green.png"
+                }
+            ]
+        },
+        {
+            "name": "AIR FORCE 1 LOW",
+            "collab": "x Travis Scott",
+            "price": 180,
+            "models": [
+                {
+                    "color": "darkerorange",
+                    "img": "images/shoes/nike/air-force-1-low-ts/air-force-yellow.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/nike/air-force-1-low-ts/air-force-cream.png"
+                }
+            ]
+        }
+    ]
+}

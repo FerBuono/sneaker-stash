@@ -4,7 +4,7 @@ const page = url.split("/").pop().split(".").shift();
 document.addEventListener('DOMContentLoaded', loadCards);
 
 function loadCards() {
-    const db = "data/db.json";
+    const db = `data/${page}.json`;
     fetch(db)
         .then(respuesta => respuesta.json())
         .then(datos => showCards(datos))

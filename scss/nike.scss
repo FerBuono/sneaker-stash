@@ -67,6 +67,10 @@
    
     &__banner {
         
+        &__bg {
+            filter: grayscale(.2);
+        }
+
         &__text {
             animation: flicker-cyan 1.5s infinite alternate;
         }

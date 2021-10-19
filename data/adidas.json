@@ -1,0 +1,179 @@
+{
+    "adidas": [
+        {
+            "name": "NMD_R1",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-black.png"
+                },
+                {
+                    "color": "muted-lime",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-muted-lime.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/adidas/nmd_r1/nmd-r1-grey.png"
+                }
+            ]
+        },
+        {
+            "name": "YEEZY BOOST 350",
+            "collab": "x Kanye West",
+            "price": 150,
+            "models": [
+                {
+                    "color": "bordeaux",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-bordeaux.png"
+                },
+                {
+                    "color": "orange-pink",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-orange.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-black.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/yeezy-boost-350/yeezy-boost-350-white.png"
+                }
+            ]
+        },
+        {
+            "name": "FORUM EXHIBIT LOW",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "pantone",
+                    "img": "images/shoes/adidas/forum/forum-violet.png"
+                },
+                {
+                    "color": "gree-white",
+                    "img": "images/shoes/adidas/forum/forum-beige.png"
+                },
+                {
+                    "color": "red",
+                    "img": "images/shoes/adidas/forum/forum-red.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_Hu",
+            "collab": "x Pharrell Williams",
+            "price": 250,
+            "models": [
+                {
+                    "color": "dark-purple",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-violet.png"
+                },
+                {
+                    "color": "orangered",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-orange.png"
+                },
+                {
+                    "color": "yellow",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-yellow.png"
+                },
+                {
+                    "color": "cream",
+                    "img": "images/shoes/adidas/pharrell-williams-hu-nmd/pharrell-hu-nmd-cream.png"
+                }
+            ]
+        },
+        {
+            "name": "YEEZY BOOST 700",
+            "collab": "x Kanye West",
+            "price": 180,
+            "models": [
+                {
+                    "color": "blue-green",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-green.png"
+                },
+                {
+                    "color": "grey",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-grey.png"
+                },
+                {
+                    "color": "light-orange",
+                    "img": "images/shoes/adidas/yeezy-boost-700/yeezy-boost-700-orange.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_R1 V2",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "toasted",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-beige.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-black.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/nmd_r1-v2/nmd-v2-white.png"
+                }
+            ]
+        },
+        {
+            "name": "RETROPY P9",
+            "collab": "",
+            "price": 100,
+            "models": [
+                {
+                    "color": "blue",
+                    "img": "images/shoes/adidas/retropy p9/retropy-blue.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/retropy p9/retropy-black.png"
+                }
+            ]
+        },
+        {
+            "name": "NMD_R1 SPECTOO",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "pink",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-pink.png"
+                },
+                {
+                    "color": "dark-purple",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-purple.png"
+                },
+                {
+                    "color": "black",
+                    "img": "images/shoes/adidas/nmd_r1-spectoo/nmd-r1-spectoo-black.png"
+                }
+            ]
+        },
+        {
+            "name": "ZX 2K BOOST",
+            "collab": "",
+            "price": 140,
+            "models": [
+                {
+                    "color": "yellowgreen",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-limegreen.png"
+                },
+                {
+                    "color": "white",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-fluorgreen.png"
+                },
+                {
+                    "color": "orangered",
+                    "img": "images/shoes/adidas/zx-2k-boost/zx-2k-boost-orange.png"
+                }
+            ]
+        }
+    ]
+}

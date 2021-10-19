@@ -633,6 +633,9 @@
 .lista-carrito tr {
   box-shadow: 0 20px 1px -20px #FA1E1E; }
 
+.main__banner__bg {
+  filter: grayscale(0.2); }
+
 .main__banner__text {
   animation: flicker-cyan 1.5s infinite alternate; }
 
