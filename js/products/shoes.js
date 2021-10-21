@@ -17,7 +17,7 @@ window.onload = () => {
             const colorElement = circle.parentElement.querySelector('#colors .active');
             circle.style.backgroundColor = getComputedStyle(colorElement).backgroundColor;
         });
-    }, 100);
+    }, 200);
 };
 
 // Función para obtener todos los elementos hermanos del elemento accionado
