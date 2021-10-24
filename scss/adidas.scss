@@ -108,6 +108,12 @@
 
         background-image: url(../images/logos/adidas-logo.png);
     }
+
+    &:hover {
+        animation: flicker-red-bg 1s alternate infinite;
+        outline: $red-color solid 2px;
+        outline-offset: 5px;
+    }
    
 }
 

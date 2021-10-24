@@ -112,7 +112,12 @@
 
         background-image: url(../images/logos/nike-logo.png);
     }
-   
+
+    &:hover {
+        animation: flicker-cyan-bg 1s alternate infinite;
+        outline: $cyan-color solid 2px;
+        outline-offset: 5px;
+    }
 }
 
 .active {

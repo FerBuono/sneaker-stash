@@ -110,7 +110,12 @@
         opacity: .2;
         background-image: url(../images/logos/jordan-logo.png);
     }
-   
+
+    &:hover {
+        animation: flicker-green-bg 1s alternate infinite;
+        outline: $green-color solid 2px;
+        outline-offset: 5px;
+    }
 }
 
 .active {

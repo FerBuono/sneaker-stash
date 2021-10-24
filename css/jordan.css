@@ -5,17 +5,35 @@
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #9bdc28, 0 0 19px #9bdc28, 0 0 36px #9bdc28; } }
 
+@keyframes flicker-green-bg {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: 0 0 1px #000, 0 0 4px #fff, 0 0 5px #9bdc28, 0 0 8px #9bdc28, 0 0 10px #9bdc28; }
+  20%, 24%, 55% {
+    box-shadow: 0 0 1px #000, 0 0 2px #fff, 0 0 2.5px #9bdc28, 0 0 4px #9bdc28, 0 0 5px #9bdc28; } }
+
 @keyframes flicker-red {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #000, 0 0 18px #FA1E1E, 0 0 38px #FA1E1E, 0 0 73px #FA1E1E; }
   20%, 24%, 55% {
     text-shadow: 0 0 5px #000, 0 0 9px #FA1E1E, 0 0 19px #FA1E1E, 0 0 36px #FA1E1E; } }
 
+@keyframes flicker-red-bg {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: 0 0 1px #000, 0 0 4px #fff, 0 0 5px #FA1E1E, 0 0 8px #FA1E1E, 0 0 10px #FA1E1E; }
+  20%, 24%, 55% {
+    box-shadow: 0 0 1px #000, 0 0 2px #fff, 0 0 2.5px #FA1E1E, 0 0 4px #FA1E1E, 0 0 5px #FA1E1E; } }
+
 @keyframes flicker-cyan {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 18px #36F5F5, 0 0 38px #36F5F5, 0 0 73px #36F5F5; }
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #36F5F5, 0 0 19px #36F5F5, 0 0 36px #36F5F5; } }
+
+@keyframes flicker-cyan-bg {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    box-shadow: 0 0 1px #000, 0 0 4px #fff, 0 0 5px #36F5F5, 0 0 8px #36F5F5, 0 0 10px #36F5F5; }
+  20%, 24%, 55% {
+    box-shadow: 0 0 1px #000, 0 0 2px #fff, 0 0 2.5px #36F5F5, 0 0 4px #36F5F5, 0 0 5px #36F5F5; } }
 
 @keyframes flicker-darkgreen {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -704,6 +722,11 @@ body {
   filter: invert(0.5);
   opacity: .2;
   background-image: url(../images/logos/jordan-logo.png); }
+
+.card:hover {
+  animation: flicker-green-bg 1s alternate infinite;
+  outline: #9bdc28 solid 2px;
+  outline-offset: 5px; }
 
 .active {
   border: 2px solid #36F5F5;
