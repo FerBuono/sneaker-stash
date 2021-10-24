@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/jordan.css">
     <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon">
+    <script type="text/javascript" src="js/libraries/jquery-3.6.0.min.js"></script>
     <title>Jordan - Sneaker Stash</title>
 </head>
 <body>
+    <div class="loader" id="loader">
+        <img src="images/logos/logo.png" alt="sneaker-stash">
+        <div class="loader__divisor-bar"></div>
+        <img class='loader__brand' src="images/logos/jordan-logo.png" alt="adidas">
+    </div>
+
     <header class="header" id="header">
         <div class="header__container">
             <!-- SELECCIONAR MARCA -->
@@ -84,6 +91,8 @@
 
 
 </body>
+
+<script src="js/loader.js"></script>
 <script src="js/products/products.js"></script>
 <script src="js/products/cards.js"></script>
 <script src="js/products/shoes.js"></script>

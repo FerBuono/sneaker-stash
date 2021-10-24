@@ -1,4 +1,4 @@
-@import 'globals/fonts', 'globals/variables', 'globals/keyframes';
+@import 'globals/fonts', 'globals/variables', 'globals/keyframes', 'globals/loader';
 
 * {
     margin: 0;
@@ -9,13 +9,14 @@
 
 body {
     position: relative;
+    top: 0;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     background-color: #131313;
     background-image: url(../images/backgrounds/sneakers-bg2.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: 110%;
+    background-position: bottom;
 }
 
 .header{
@@ -26,8 +27,7 @@ body {
     width: 100%;
     height: 3rem;
     padding: 5px 0;
-    top: 0;
-    margin-top: 3.5rem;
+    top: 3.5rem;
     margin-bottom: 2rem;
     border-top: 4px solid white;
     border-bottom: 4px solid white;
@@ -67,7 +67,7 @@ body {
             font-family: 'Covered By Your Grace', 'Poppins', sans-serif;
             font-size: 7em;
             letter-spacing: 5px;
-            text-shadow: 0 0 10px black;
+            animation: flicker-darkgreen 10s infinite alternate;
         }
     }
 
@@ -88,7 +88,6 @@ body {
 
 .bg-image {
     position:absolute;
-    top: 0;
     width: 150%;
     object-fit: cover;
     object-position: center;
@@ -108,8 +107,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+    margin-top: 6rem;
     z-index: 10;
-    top: 0;
 }
 
 .card {
@@ -133,7 +132,6 @@ body {
         overflow: hidden;
         opacity: 0;
         transition: 0.5s;
-        z-index: -1;
 
         img {
             width: 100%;
@@ -169,7 +167,7 @@ body {
         border-radius: 50%;
         transition: 0.5s;
         background: #fff;
-        z-index: 10;
+        z-index: 9;
         opacity: 1;
         transform: translate3d(-50%,-50%,50px);
 
@@ -181,11 +179,8 @@ body {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: black;
             box-shadow: 0 0 10px black;
             opacity: .5;
-            z-index: 10;
-            transform: translate3d(0,0,-50px);
         }
 
         &--adidas {
@@ -227,6 +222,7 @@ body {
         text-shadow: 0 0 15px $green-color;
         opacity: 0;
         transition: 0.5s;
+        z-index: 10;
 
         &--adidas {
             color: black000;

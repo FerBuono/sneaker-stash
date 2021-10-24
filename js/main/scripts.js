@@ -78,7 +78,7 @@ const removeChanges = e => {
     bgNike.classList.remove('active');
     bgJordan.classList.remove('active');
 
-    title.style.animation = 'flicker-base 1.5s infinite alternate';
+    title.style.animation = 'flicker-darkgreen 1.5s infinite alternate';
 }
 
 const loadEventListeners = () => {
