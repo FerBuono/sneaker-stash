@@ -154,3 +154,17 @@
         0 0 36px $darkgreen-color;
     }    
 }
+
+@keyframes hide-loader {
+    0% {
+        clip-path: circle(111.6% at 0 50%);
+    }
+
+    50% {
+        clip-path: circle(70% at 0 50%);
+    }
+
+    100% {
+        clip-path: circle(0% at 0 50%);
+    }
+}

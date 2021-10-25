@@ -41,6 +41,14 @@
   20%, 24%, 55% {
     text-shadow: 0 0 4px #000, 0 0 5px #fff, 0 0 9px #003F34, 0 0 19px #003F34, 0 0 36px #003F34; } }
 
+@keyframes hide-loader {
+  0% {
+    clip-path: circle(111.6% at 0 50%); }
+  50% {
+    clip-path: circle(70% at 0 50%); }
+  100% {
+    clip-path: circle(0% at 0 50%); } }
+
 .white {
   background-color: white; }
 
