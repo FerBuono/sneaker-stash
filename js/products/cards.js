@@ -1,7 +1,7 @@
 const url = $(location).attr('pathname');
 const page = url.split("/").pop().split(".").shift();
 
-$(window).on("load", loadCards)
+$(window).ready(loadCards);
 
 function loadCards() {
     const db = `data/${page}.json`;
