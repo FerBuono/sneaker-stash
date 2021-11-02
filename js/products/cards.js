@@ -1,14 +1,17 @@
-const url = window.location.pathname;
+const url = $(location).attr('pathname');
 const page = url.split("/").pop().split(".").shift();
 
-document.addEventListener('DOMContentLoaded', loadCards);
+$(window).on("load", loadCards)
 
 function loadCards() {
     const db = `data/${page}.json`;
-    fetch(db)
-        .then(respuesta => respuesta.json())
-        .then(datos => showCards(datos))
-        .catch(error => console.log(error))
+    $.ajax({
+        url: db,
+        method: "GET",
+        dataype: "json",
+        success: (data) => showCards(data),
+        error: (error) => console.log(error)
+    })
 };
 
 function showCards(products) {

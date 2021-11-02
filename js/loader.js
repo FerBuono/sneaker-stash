@@ -1,6 +1,6 @@
 const loader = $('#loader');
 
-const link = window.location.pathname.split('/').pop();
+const link = $(location).attr('pathname').split('/').pop();
 
 $(window).on("load", () => {
     setTimeout(() => {
